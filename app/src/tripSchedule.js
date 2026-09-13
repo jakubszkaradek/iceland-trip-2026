@@ -3,6 +3,16 @@
 export const TRIP_START_DATE = new Date('2026-09-16T20:55:00+02:00')
 export const TRIP_END_DATE = new Date('2026-09-23T05:30:00+02:00')
 
+export const DAY_MAP_URLS = {
+  0: 'https://www.google.com/maps/dir/Keflavik+Airport/Snorrabraut+71,+Reykjavik',
+  1: 'https://www.google.com/maps/dir/Snorrabraut+71,+Reykjavik/Thingvellir+National+Park/Strokkur+Geysir/Gullfoss+Falls/Bonus+Selfoss/Kerid+Crater/Hvolsvollur+Camping',
+  2: 'https://www.google.com/maps/dir/Hvolsvollur+Camping/Seljalandsfoss/Gljufrabui/Skogafoss/Solheimajokull/Dyrholaey/Reynisfjara+Beach/Skaftafell+Camping',
+  3: 'https://www.google.com/maps/dir/Skaftafell+Camping/Jokulsarlon/Diamond+Beach/Fjadrargljufur/Sundlaug+Vikur/Vik+Campsite',
+  4: 'https://www.google.com/maps/dir/Vik+Campsite/Borgarnes/Ytri+Tunga/Budakirkja/Arnarstapi/Londrangar/Arnarstapi+Camping',
+  5: 'https://www.google.com/maps/dir/Arnarstapi+Camping/Djupalonssandur/Saxholl+Crater/Kirkjufell/Reykjavik+Eco+Campsite/Kvika+Footbath',
+  6: 'https://www.google.com/maps/dir/Reykjavik+Eco+Campsite/Hallgrimskirkja/Seltun+Geothermal+Area/Brimketill/Bridge+Between+Continents/Duus+Restaurant+Keflavik/Keflavik+Airport',
+}
+
 export const TRIP_EVENTS = [
   // DZIEŃ 0 / START
   {

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate, useNavigate, Link, useLocation } from 'react-router-dom'
 import { supabase } from './supabaseClient'
 import { TripStatusWidget } from './TripStatusWidget'
+import { DAY_MAP_URLS } from './tripSchedule'
 import './App.css'
 
 // ============ DATA ============
@@ -25,7 +26,7 @@ const ROUTE_DATA = [
       '💳 Dopłata na lotnisku 1101 PLN (zaliczka 263 PLN)',
       '🏠 Dojazd do Airbnb Snorrabraut 71 (190 PLN/os)',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/Keflavik+Airport/Snorrabraut+71,+Reykjavik',
+    mapUrl: DAY_MAP_URLS[0],
   },
   {
     day: 1, date: '17.09', weekday: 'Śr', title: 'Golden Circle',
@@ -41,7 +42,7 @@ const ROUTE_DATA = [
       '17:15 Kerið — krater (opcja)',
       '18:45 Hvolsvöllur Camping',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Reykjavik&destination=Hvolsvollur&waypoints=Thingvellir%7CGeysir%7CGullfoss%7CSelfoss%7CKerid',
+    mapUrl: DAY_MAP_URLS[1],
   },
   {
     day: 2, date: '18.09', weekday: 'Czw', title: 'Wodospady & Czarne Plaże',
@@ -56,7 +57,7 @@ const ROUTE_DATA = [
       '16:45 Reynisfjara Beach ⚠️ SNEAKER WAVES',
       '18:00 Skaftafell Camping (lub nocleg w Vík)',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Hvolsvollur&destination=Skaftafell&waypoints=Seljalandsfoss%7CSkogafoss%7CSolheimajokull%7CDyrholaey%7CReynisfjara+Beach',
+    mapUrl: DAY_MAP_URLS[2],
   },
   {
     day: 3, date: '19.09', weekday: 'Pt', title: 'Laguna, Diamenty & Basen Vík',
@@ -70,7 +71,7 @@ const ROUTE_DATA = [
       '17:30 Vík Campsite — rozbicie namiotu, ogrzewana kuchnia',
       '19:00 ♨️ Basen miejski Sundlaug Vík (~30 PLN) — wygrzanie po lodowcu!',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Skaftafell&destination=Vik&waypoints=Jokulsarlon%7CDiamond+Beach%7CFjadrargljufur%7CSundlaug+Vikur',
+    mapUrl: DAY_MAP_URLS[3],
   },
   {
     day: 4, date: '20.09', weekday: 'Sob', title: 'Transfer → Snæfellsnes',
@@ -86,7 +87,7 @@ const ROUTE_DATA = [
       '17:30 Lóndrangar — iglice',
       '18:45 Arnarstapi Camping',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Vik&destination=Arnarstapi&waypoints=Borgarnes%7CYtri+Tunga%7CBudakirkja%7CLondrangar',
+    mapUrl: DAY_MAP_URLS[4],
   },
   {
     day: 5, date: '21.09', weekday: 'Nd', title: 'Kirkjufell → Reykjavík & Kvika Footbath',
@@ -101,7 +102,7 @@ const ROUTE_DATA = [
       '18:00 Reykjavík Eco Campsite',
       '20:30 ♨️ Kvika Footbath (Grótta) — darmowe moczenie nóg pod zorzę!',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Arnarstapi&destination=Reykjavik&waypoints=Djupalonssandur%7CSaxholl+Crater%7CKirkjufell%7CKvika+Footbath',
+    mapUrl: DAY_MAP_URLS[5],
   },
   {
     day: 6, date: '22.09', weekday: 'Pn', title: 'Reykjavík, Reykjanes & Wylot',
@@ -119,7 +120,7 @@ const ROUTE_DATA = [
       '21:00 🚗 Zwrot auta bezpośrednio na lotnisku KEF',
       '23:50 ✈️ WYLOT do Warszawy',
     ],
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Reykjavik&destination=Keflavik+Airport&waypoints=Seltun+Geothermal+Area%7CBrimketill+lava+rock+pool%7CBridge+Between+Continents',
+    mapUrl: DAY_MAP_URLS[6],
   },
 ]
 
@@ -341,7 +342,7 @@ function RoutePage() {
     <div className="page">
       <h2>🗺️ Trasa — Dzień po Dniu</h2>
       {ROUTE_DATA.map(day => (
-        <div key={day.day} className="route-day">
+        <div key={day.day} className="route-day" id={`day-${day.day}`}>
           <div className="day-header">
             <span className="day-badge">D{day.day}</span>
             <div>
@@ -351,11 +352,34 @@ function RoutePage() {
           </div>
           <p className="day-summary">{day.summary}</p>
           <ul className="day-points">
-            {day.points.map((p, i) => <li key={i}>{p}</li>)}
+            {day.points.map((p, i) => {
+              // Extract clean place name for direct Google Maps search
+              const cleanName = p
+                .replace(/^[0-9:]+\s*/, '')
+                .replace(/^[^\w\s\u00C0-\u017F]+\s*/, '')
+                .split('—')[0]
+                .split('(')[0]
+                .trim()
+              const spotSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cleanName + ', Iceland')}`
+              return (
+                <li key={i} className="day-point-item">
+                  <span className="point-text">{p}</span>
+                  <a
+                    href={spotSearchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="point-pin-btn"
+                    title={`Pinezka: otwórz ${cleanName} w Google Maps`}
+                  >
+                    📍
+                  </a>
+                </li>
+              )
+            })}
           </ul>
           {day.mapUrl && (
-            <a href={day.mapUrl} target="_blank" rel="noopener" className="map-link">
-              📍 Otwórz w Google Maps →
+            <a href={day.mapUrl} target="_blank" rel="noopener noreferrer" className="map-link">
+              🗺️ Otwórz całą trasę D{day.day} w Google Maps ({day.km} km) →
             </a>
           )}
         </div>

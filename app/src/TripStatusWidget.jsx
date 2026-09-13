@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { getTripStatus, TRIP_EVENTS } from './tripSchedule'
+import { getTripStatus, TRIP_EVENTS, DAY_MAP_URLS } from './tripSchedule'
 
 export function TripStatusWidget({ isCompact = false }) {
   const [simulatedIndex, setSimulatedIndex] = useState(null)
@@ -177,8 +177,28 @@ export function TripStatusWidget({ isCompact = false }) {
 
               <div className="event-time-location">
                 <span>🕒 {formatTime(status.currentEvent.start)} – {formatTime(status.currentEvent.end)}</span>
-                <span>📍 {status.currentEvent.location}</span>
+                <a
+                  href={DAY_MAP_URLS[status.currentEvent.day] || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(status.currentEvent.location + ', Iceland')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="location-pin-btn"
+                  title="Kliknij, aby otworzyć całą trasę w Google Maps"
+                >
+                  📍 <span className="pin-name">{status.currentEvent.location}</span> ↗
+                </a>
               </div>
+
+              {DAY_MAP_URLS[status.currentEvent.day] && (
+                <a
+                  href={DAY_MAP_URLS[status.currentEvent.day]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="event-full-route-btn"
+                  title="Otwórz całą trasę tego dnia ze wszystkimi punktami"
+                >
+                  🗺️ Cała trasa Dnia {status.currentEvent.day} w Google Maps →
+                </a>
+              )}
 
               <p className="event-desc">{status.currentEvent.description}</p>
 
