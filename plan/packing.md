@@ -16,21 +16,42 @@ Bagaż lotniczy WizzAir na osobę:
 
 ---
 
-## 📦 Rzeczy Wspólne (Podział na Załogę)
+## 📦 Rzeczy Wspólne & Podział Kosmetyków (Ustalenia Pauliny)
 
 Sprzęt kempingowy w aucie (daje Sheep Car): namiot 4-osobowy, 4 śpiwory, 2 materace 140 cm, kuchenka gazowa + 3 kartusze, zestaw naczyń, router Wi-Fi, 4 krzesła, roof box 330L.
 
+### Podział Kosmetyków i Sprzętu Wspólnego:
 | Rzecz | Odpowiedzialny | Bagaż | Notatki |
 |---|---|---|---|
-| **Apteczka wyprawowa** | **Kuba** | Walizka | Compeed (pęcherze), ibuprofen, paracetamol, stoperan, elektrolity, plastry z opatrunkiem, octenisept w małym sprayu, bandaż elastyczny. |
-| **Naprawczy set biwakowy** | **Kuba** | Walizka | Szara taśma Duct Tape (nawinięta na ołówek), taśma izolacyjna, 10 trytek (zip-ties). |
-| **Folie NRC (4 szt.)** | **Kuba** | Walizka | Podkładać pod materace/śpiwory jako izolacja termiczna od zimnej ziemi. |
-| **Osłonka palnika (harmonijka alu)** | **Kuba** | Walizka | Kluczowa na islandzki wiatr – bez niej gaz zgaśnie, a gotowanie wody trwa 40 min. |
-| **Worki strunowe (zip 2L / 3L)** | **Kuba** | Walizka | 15 szt. na elektronikę, dokumenty, porcje jedzenia. |
-| **Worki na śmieci mocne (60L / 120L)** | **Paulina** | Walizka | Cała rolka – wyłożenie bagażnika, ochrona mokrych butów/ubrań przed zmoczeniem suchych. |
-| **Gąbka do naczyń + mały płyn eko** | **Paulina** | Walizka | Płyn przelany do buteleczki 50 ml. |
-| **Ładowarka samochodowa z rozdzielaczem** | **Klara** | Podręczny | Min. 2× USB-C + 2× USB-A (zapytać tatę!). Kluczowe do ładowania w trasie 4 telefonów. |
-| **Kabelki ładujące zapasowe (2 szt.)** | **Natalia** | Podręczny | USB-C i Lightning. |
+| **Szampon** | **Paulina** | Walizka (max 100ml lub w kostce) | Jeden wspólny dla całej ekipy |
+| **Płyn do twarzy** | **Paulina** | Walizka (max 100ml) | Kosmetyk do pielęgnacji |
+| **Pasta do zębów** | **Natalia (Natu)** | Walizka (max 100ml) | Duża tubka do 100ml dla grupy |
+| **Krem do twarzy** | **Natalia & Klara** | Walizka | Pielęgnacja i ochrona przed wiatrem |
+| **Płyn do mycia (żel pod prysznic)** | **Klara** | Walizka (lub w kostce) | Do wspólnego użytku pod prysznicami |
+| **Szczotka do włosów** | **Klara** | Walizka | Wspólna |
+| **Europejska karta parkingowa ("inwalidka")** | **Klara** | Podręczny | **KLUCZOWA**: zwalnia z wielu opłat parkingowych Parka.is / daje miejsca pod samymi wejściami! |
+| **Suszarka do włosów** | **Kuba** | Walizka | Do suszenia włosów na kempingach / w domkach |
+| **Apteczka + Antybiotyk + Lekarstwa** | **Kuba & Każdy** | Walizka / Podręczny | Kuba bierze ogólną apteczkę; każdy zabiera własny antybiotyk/leki |
+| **Naprawczy set biwakowy** | **Kuba** | Walizka | Duct Tape, taśma izolacyjna, 10 trytek |
+| **Folie NRC (4 szt.)** | **Kuba** | Walizka | Izolacja termiczna od zimnej ziemi |
+| **Osłonka palnika (harmonijka alu)** | **Kuba** | Walizka | Kluczowa na islandzki wiatr |
+| **Worki na śmieci mocne (60L / 120L)** | **Paulina** | Walizka | Cała rolka na mokre rzeczy i ochronę bagażnika |
+| **Gąbka do naczyń + mały płyn eko** | **Paulina** | Walizka | Płyn przelany do buteleczki 50 ml |
+| **Ładowarka samochodowa z rozdzielaczem** | **Klara** | Podręczny | Min. 2× USB-C + 2× USB-A (od taty!) |
+
+### Obowiązkowo KAŻDY uczestnik ma we własnym bagażu:
+- [ ] **Korki do uszu (stopery)** — absolutny must-have do spania w namiocie przy islandzkim wietrze!
+- [ ] **Szczoteczka do zębów**
+- [ ] **Klapki do mycia / Crocsy** — pod prysznice, na kempingi i do źródeł termalnych
+- [ ] **Strój kąpielowy** — na basen w Vík (D3), Kvika Footbath (D5), termy przed lotem
+- [ ] **Ręcznik cienki (szybkoschnący mikrofibra)** + **Ręcznik normalny** (na baseny i po prysznicu)
+- [ ] **Fizyczne prawo jazdy** — plastik, nie mObywatel!
+- [ ] **Karta EKUZ** — fizyczna karta (Natalia musi pilnie wyrobić!)
+- [ ] **Antybiotyk oraz własne lekarstwa**
+- [ ] **Termos** (stalowy, min. 0.75 L — rano zalewamy wrzątkiem na cały dzień w trasie)
+
+> [!IMPORTANT]
+> **GŁÓWNE ZAKUPY SPOŻYWCZE**: Sklep **Bónus w Selfoss** (Dzień 1 popołudniu). Kupujemy cały zapas prowiantu, wody, sera, masła orzechowego i bakalii na kolejne 3-4 dni.
 
 ---
 
