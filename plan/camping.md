@@ -21,11 +21,11 @@ Przewodnik po 5 bazach kempingowych na trasie. Infrastruktura, koszty, dane kont
 | **Adres** | Vallarvegur 3, 860 Hvolsvöllur |
 | **Współrzędne GPS** | 63.7505° N, 20.2235° W |
 | **Strona WWW** | [tjalda.is/en/hvolsvollur](https://tjalda.is/en/hvolsvollur/) |
-| **Telefon** | +354 487 8000 / +354 892 2780 |
-| **Okres otwarcia** | 15 maja – 30 września (we wrześniu **w pełni czynny**) |
-| **Cena za noc** | ~2 000 ISK / osoba (~58 PLN) + podatek turystyczny ~400 ISK / namiot |
-| **Infrastruktura** | • **Rzadkość na Islandii: lasek/drzewa**, które genialnie tłumią wiatr!<br>• Ogrzewany budynek socjalny z toaletami i umywalkami<br>• Ciepłe prysznice (często wliczone lub żetony ~300 ISK)<br>• Kuchnia ze zlewami do zmywania i czajnikami<br>• Prąd (słupki na kempingu), Wi-Fi w okolicy recepcji<br>• Sklep Kronan i stacja N1 w odległości 400 m |
-| **Procedura zameldowania** | Jeśli recepcja jest pusta: rozbijacie namiot, obsługa przychodzi wieczorem (ok. 20:00-22:00) lub rano z terminalem płatniczym. |
+| **Telefon** | +354 866 8945 / +354 898 2454 |
+| **Okres otwarcia** | 1 maja – 1 listopada 2026 (we wrześniu **w 100% czynny**) |
+| **Cena za noc** | **2 900 ISK / os.** (~84 PLN), Klara (*öryrki*): **2 000 ISK** (~58 PLN). Podatek turystyczny wliczony w cenę! Łącznie grupa: 10 700 ISK (~310 PLN) + 4× prysznic 400 ISK = 12 300 ISK (~356 PLN). |
+| **Infrastruktura** | • **Rzadkość na Islandii: lasek/drzewa**, które genialnie tłumią wiatr!<br>• Ogrzewana kuchnia wewnętrzna ze zlewami i czajnikami<br>• Ciepłe prysznice: 400 ISK (wrzutnik na monety 100 ISK)<br>• **Pralnia i suszarka bębnowa: DARMOWE (0 ISK w cenie!)**<br>• Wi-Fi na terenie kempingu, sklep Krónan i stacja N1 w odległości 400 m |
+| **Procedura zameldowania** | **Tylko Drop-in / Walk-in** (brak na Parka.is). Przyjazd o dowolnej porze (brak szlabanów). Rozbijacie namiot, opłata u zarządcy wieczorem (20:00–22:00) lub rano przed wyjazdem. |
 
 ---
 
@@ -38,12 +38,12 @@ Przewodnik po 5 bazach kempingowych na trasie. Infrastruktura, koszty, dane kont
 | **Miejscowość** | Skaftafell (Park Narodowy Vatnajökull) |
 | **Adres** | Skaftafell, 785 Öræfi |
 | **Współrzędne GPS** | 64.0163° N, 16.9664° W |
-| **Strona WWW** | [vatnajokulsthjodgardur.is / Skaftafell](https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell) lub [parka.is/campsites/skaftafell](https://parka.is/campsites/skaftafell/) |
+| **Strona WWW** | [vatnajokulsthjodgardur.is](https://www.vatnajokulsthjodgardur.is/) |
 | **Telefon** | +354 470 8300 (Visitor Centre) |
 | **Okres otwarcia** | **Całoroczny (Open all year)** |
-| **Cena za noc** | ~2 500 ISK / osoba dorosła (~72.50 PLN)<br>Prysznic: ~500 ISK / 5 min (płatne przez aplikację Parka.is lub kartą zbliżeniową) |
-| **Infrastruktura** | • Ogromny teren trawiasty podzielony na sektory chronione wałami i niską roślinnością<br>• Duże, nowoczesne pawilony sanitarne z WC<br>• Ciepłe prysznice na kody / kartę<br>• Zadaszone stanowiska do zmywania naczyń z ciepłą wodą<br>• **UWAGA**: Brak ogólnodostępnej ogrzewanej kuchni turystycznej z kuchenkami — gotujemy na własnym palniku gazowym!<br>• Centrum Informacji Turystycznej obok (kawiarnia, toalety, zbiórka na trekking lodowcowy) |
-| **Procedura zameldowania** | Płatność w Visitor Centre w godzinach pracy LUB przez aplikację **Parka.is** (wybór zakładki Campsites → Skaftafell). |
+| **Cena za noc** | **2 800 ISK / os.** (~81 PLN), Klara (*öryrki*): **2 300 ISK** (~66 PLN). Podatek wliczony.<br>• **Ciepłe prysznice: 0 ISK (BEZPŁATNE wg Reglugerð 266/2026!)**<br>• **Pralki i suszarki: 0 ISK (BEZPŁATNE!)**<br>• **Opłata parkingowa parku: 0 ISK** (anulowana dla gości kempingu!). Łącznie grupa: 10 700 ISK (~310 PLN). |
+| **Infrastruktura** | • Ogromny teren trawiasty podzielony na sektory chronione wałami i niską roślinnością<br>• Nowoczesne, ogrzewane pawilony sanitarne z toaletami i nielimitowanymi gorącymi prysznicami<br>• Zadaszone zewnętrzne stanowiska do zmywania naczyń z ciepłą wodą<br>• ⚠️ **UWAGA: BRAK KRYTEJ OGRZEWANEJ KUCHNI/JADALNI** — gotujemy na palniku gazowym pod klapą bagażnika RAV4 i jemy w ogrzanym aucie! |
+| **Procedura zameldowania** | **Wyłącznie Walk-in** (rezerwacja online na Parka.is nie dotyczy namiotów, wolnych miejsc >85%). Wjazd wolny 24/7. **Rano o godz. 09:00** w centrum Skaftafellsstofa opłacacie kemping i **podajecie numer rejestracyjny RAV4**, aby anulować opłatę parkingową z kamer ANPR! |
 
 ---
 
@@ -54,18 +54,18 @@ Przewodnik po 5 bazach kempingowych na trasie. Infrastruktura, koszty, dane kont
 | Parametr | Szczegóły |
 |---|---|
 | **Miejscowość** | Vík í Mýrdal |
-| **Adres** | Klettsvegur 1, 870 Vík |
+| **Adres** | Klettsvegur 7, 870 Vík |
 | **Współrzędne GPS** | 63.4194° N, 18.9958° W |
-| **Strona WWW** | [vikcampsite.is](https://vikcampsite.is/) |
-| **Telefon** | +354 487 1345 / +354 845 6116 |
-| **Okres otwarcia** | 1 czerwca – 31 października (we wrześniu **w pełni czynny**) |
-| **Cena za noc** | ~2 500 ISK / osoba (~72.50 PLN)<br>Pralnia / suszarka: ~800 ISK za cykl |
-| **Infrastruktura** | • **Duża, ogrzewana sala kuchenno-jadalniana** z ławami, czajnikami, tosterami<br>• **Pralki i suszarki bębnowe** — absolutny priorytet po mokrym dniu na lodowcu!<br>• Ciepłe prysznice i toalety w ogrzewanym budynku<br>• Darmowe Wi-Fi na terenie budynku socjalnego<br>• Położony u stóp klifu Reynisdrangar, 500 m do supermarketu Krónan i lokalnego basenu miejskiego |
-| **Procedura zameldowania** | Recepcja na miejscu (płatność kartą/Revolut). W przypadku przyjazdu po 20:00 opłata rano w recepcji. |
+| **Strona WWW** | [vikcamping.is](https://vikcamping.is/) *(poprawna domena)* |
+| **Telefon** | +354 487 1345 |
+| **Okres otwarcia** | 20 kwietnia – 1 listopada 2026 (we wrześniu **w 100% czynny**) |
+| **Cena za noc** | **2 100 ISK / os.** (~61 PLN) + **400 ISK** podatek za namiot. Prysznic: 300 ISK (żeton/moneta). Pralka/suszarka: 800 ISK. Łącznie grupa: 10 000 ISK (~290 PLN) z prysznicami. |
+| **Infrastruktura** | • **Duża, w pełni ogrzewana sala kuchenno-jadalniana (30–40 osób)** z mikrofalówkami, czajnikami, tosterami, stołami i ławami biesiadnymi<br>• Pralki i suszarki bębnowe<br>• Darmowe Wi-Fi i gniazdka 230V do ładowania powerbanków<br>• 500 m do basenu geotermalnego Sundlaug Vík i marketu Krónan |
+| **Procedura zameldowania** | **Wyłącznie Walk-in** (brak na Parka.is — "zawsze jest miejsce na jeszcze jeden namiot"). Wjazd po 19:00–20:00 bez przeszkód, rozbijacie namiot, płatność rano w recepcji. |
 
 ---
 
-## 4. Arnarstapi Campsite — Baza Dnia 4 (20→21.09)
+## 4. Arnarstapi Campsite — Baza Dnia 4 (20→21.09) — *PUNKT KRYTYCZNY*
 
 *Baza na Półwyspie Snæfellsnes: widok na klify oceaniczne i góry wulkaniczne.*
 
@@ -74,12 +74,13 @@ Przewodnik po 5 bazach kempingowych na trasie. Infrastruktura, koszty, dane kont
 | **Miejscowość** | Arnarstapi (Snæfellsnes) |
 | **Adres** | Arnarstapi, 356 Snæfellsbær (przy Arnarstapi Center) |
 | **Współrzędne GPS** | 64.7672° N, 23.6267° W |
-| **Strona WWW** | [arnarstapicenter.is](https://arnarstapicenter.is/) / [tjalda.is/en/arnarstapi](https://tjalda.is/en/arnarstapi/) |
+| **Strona WWW** | [parka.is/arnarstapi](https://parka.is/arnarstapi/) |
 | **Telefon** | +354 435 6600 |
-| **Okres otwarcia** | Maj – koniec września / październik (**potwierdzić telefonicznie przed przyjazdem**) |
-| **Cena za noc** | ~2 000 ISK / osoba (~58 PLN) |
-| **Infrastruktura** | • Malownicze parcele z widokiem na ocean i lodowiec Snæfellsjökull<br>• Budynek z toaletami i gorącymi prysznicami<br>• Zlewy do mycia naczyń z widokiem na klify<br>• Bezpośredni dostęp do widokowej ścieżki wzdłuż bazaltowego wybrzeża i łuku Gatklettur<br>• Restauracja / bistro Snjófell w zasięgu 100 m |
-| **Plan awaryjny (jeśli zamknięty)** | Gdyby kemping zamknął się wcześniej po sezonie letnim, alternatywy na Snæfellsnes: **Ólafsvík Campsite** (północne wybrzeże, 25 km dalej) lub **Grundarfjörður Campsite** (obok Kirkjufell, całoroczny). |
+| **Okres otwarcia** | **100% OTWARTY** (oficjalne poligony Parka.is zamykają sektory dopiero **6 października 2026!**) |
+| **Cena za noc** | **2 500 ISK / os.** (~72.50 PLN) + **400 ISK** podatek rezerwacyjny.<br>• **Ciepłe prysznice: W CENIE POBYTU (0 ISK!)**.<br>Łącznie grupa: **10 400 ISK (~301,60 PLN)** na 4 osoby. |
+| **Infrastruktura** | • Malownicze parcele z widokiem na ocean i lodowiec Snæfellsjökull<br>• Dwa ogrzewane pawilony sanitarne z WC i darmowymi ciepłymi prysznicami<br>• Zadaszone zewnętrzne zlewy do mycia naczyń<br>• ⚠️ **UWAGA: BRAK OGRZEWANEJ KUCHNI POD DACHEM** — gotujemy na palniku pod klapą bagażnika RAV4 i jemy w aucie! |
+| **Procedura zameldowania** | Wjazd wolny 24/7 (brak szlabanów). Po zaparkowaniu opłacacie pobyt bezpośrednio w aplikacji **Parka.is** po numerze rejestracyjnym auta. |
+| **Plan awaryjny (w razie sztormu/wichury >50 km/h)** | Grupa kieruje się 25 km dalej na północ do **Ólafsvík Campsite** (droga 574/54) — kemping miejski czynny do 30.09 z **nowoczesną, ogrzewaną kuchnią wewnętrzną** i darmowymi prysznicami! |
 
 ---
 
@@ -95,9 +96,9 @@ Przewodnik po 5 bazach kempingowych na trasie. Infrastruktura, koszty, dane kont
 | **Strona WWW** | [reykjavikcampsite.is](https://www.reykjavikcampsite.is/) |
 | **Telefon** | +354 568 6944 |
 | **Okres otwarcia** | **Całoroczny (Open all year)** |
-| **Cena za noc** | ~3 555 ISK za parcelę namiotową + 400 ISK podatek miejski / osoba (łącznie ~5 155 ISK / 4 os = ~37.50 PLN/os) |
-| **Infrastruktura** | • **Super nowoczesna, przestronna, ogrzewana kuchnia** (płyty indukcyjne, mikrofalówki, garnki, naczynia)<br>• Duża jadalnia z gniazdkami do ładowania elektroniki<br>• Geotermalne, gorące prysznice **w cenie pobytu** (bez limitu czasowego!)<br>• **"Free food shelf"**: półka z jedzeniem, kartuszami gazowymi i sprzętem pozostawionym przez turystów kończących tripy<br>• Pralnia komercyjna, zamykane szafki, stacja segregacji śmieci<br>• Tuż obok wejście do Laugardalslaug (największy kompleks basenów geotermalnych w kraju) |
-| **Procedura zameldowania** | Automatyczny check-in online na stronie lub w kiosku w recepcji. |
+| **Cena za noc** | Parcela z 1. osobą: 3 555 ISK + 3 dodatkowe osoby (3× 3 150 ISK) + 400 ISK podatek = **13 405 ISK (~388,75 PLN)** na całą 4-osobową grupę po 10% rabacie online (~97 PLN/os).<br>• **Ciepłe prysznice: 0 ISK (w cenie, gorąca woda geotermalna bez limitu!)** |
+| **Infrastruktura** | • **Super nowoczesna, przestronna, ogrzewana kuchnia** (płyty indukcyjne, mikrofalówki, garnki, naczynia)<br>• Duża jadalnia z gniazdkami do ładowania elektroniki<br>• **"Free food shelf"**: półka z darmowym jedzeniem i kartuszami gazowymi pozostawionymi przez wyjeżdżających turystów<br>• Pralnia komercyjna, zamykane szafki, segregacja śmieci<br>• Obok wejście do Laugardalslaug (największy basen termalny na Islandii) |
+| **Procedura zameldowania** | **WYMAGANA REZERWACJA ONLINE** na stronie `reykjavikcampsite.is` z wyprzedzeniem 24h — generuje **4-cyfrowy kod PIN** otwierający bramę wjazdową i budynki po godz. 22:00. |
 
 ---
 

@@ -123,11 +123,51 @@ const ROUTE_DATA = [
 ]
 
 const CAMPING_DATA = [
-  { name: 'Hvolsvöllur Camping', night: '17→18', price: '~2000 ISK/os', website: 'tjalda.is', facilities: 'Kuchnia, prysznice, osłonięty drzewami', phone: '⚠️ Sprawdzić' },
-  { name: 'Skaftafell Camping', night: '18→19', price: '~2500 ISK/os', website: 'vjp.is', facilities: 'Ogromny, pralnia, suszarnie, całoroczny', phone: '⚠️ Sprawdzić' },
-  { name: 'Vík Campsite', night: '19→20', price: '~2500 ISK/os', website: 'vik.is/camping', facilities: 'Ogrzewana kuchnia, pralki, suszarki, WiFi', phone: '⚠️ Sprawdzić' },
-  { name: 'Arnarstapi Camping ⭐', night: '20→21', price: '~2000 ISK/os', website: 'arnarstapicenter.is', facilities: '"Petarda" — widoki, prysznice, spacer klifami', phone: '⚠️ Sprawdzić' },
-  { name: 'Reykjavík Eco Campsite', night: '21→22', price: '~3555+400 ISK/os', website: 'reykjavikcampsite.is', facilities: '2km od centrum, kuchnia, prąd', phone: '⚠️ Sprawdzić' },
+  { 
+    name: '1. Hvolsvöllur Camping', 
+    night: '17→18.09', 
+    price: '2 900 ISK/os (Klara 2 000)', 
+    website: 'https://tjalda.is/en/hvolsvollur/', 
+    facilities: 'Ogrzewana kuchnia, darmowa pralka i suszarka (0 ISK!), prysznic 400 ISK, lasek tłumiący wiatr', 
+    phone: '+354 866 8945',
+    status: '✅ Otwarty do 01.11 (Walk-in)'
+  },
+  { 
+    name: '2. Skaftafell Camping', 
+    night: '18→19.09', 
+    price: '2 800 ISK/os (Klara 2 300)', 
+    website: 'https://www.vatnajokulsthjodgardur.is/', 
+    facilities: 'Darmowe gorące prysznice (0 ISK!), darmowe pralki, darmowy parking po zgłoszeniu rejestracji! ⚠️ BRAK ogrzewanej kuchni (gotowanie z palnika)', 
+    phone: '+354 470 8300',
+    status: '✅ Całoroczny (Walk-in, zgłosić auto rano o 09:00)'
+  },
+  { 
+    name: '3. Vík Campsite', 
+    night: '19→20.09', 
+    price: '2 100 ISK/os + 400 ISK namiot', 
+    website: 'https://vikcamping.is/', 
+    facilities: 'Duża ogrzewana sala kuchenna (30-40 os.), pralki i suszarki (800 ISK), prysznic 300 ISK, Wi-Fi. 500m do basenu Sundlaug Vík!', 
+    phone: '+354 487 1345',
+    status: '✅ Otwarty do 01.11 (Walk-in)'
+  },
+  { 
+    name: '4. Arnarstapi Camping ⭐', 
+    night: '20→21.09', 
+    price: '2 500 ISK/os + 400 ISK namiot', 
+    website: 'https://parka.is/arnarstapi/', 
+    facilities: 'Darmowe prysznice w cenie! Widok na klify i lodowiec. ⚠️ BRAK ogrzewanej kuchni (zlewy na zewnątrz). Awaryjny: Ólafsvík (25 km, pełna kuchnia)', 
+    phone: '+354 435 6600',
+    status: '✅ Otwarty do 06.10 (Płatność Parka.is)'
+  },
+  { 
+    name: '5. Reykjavík Eco Campsite', 
+    night: '21→22.09', 
+    price: '3 350 ISK/os (~97 PLN/os ze zniżką online)', 
+    website: 'https://reykjavikcampsite.is/', 
+    facilities: 'Nowoczesna ogrzewana kuchnia, nielimitowane geotermalne prysznice (0 ISK), darmowa półka z jedzeniem i gazem, obok basenów termalnych', 
+    phone: '+354 568 6944',
+    status: '✅ Całoroczny (Wymagana rezerwacja online → kod PIN do bramy)'
+  },
 ]
 
 const FAQ_DATA = [
@@ -731,15 +771,16 @@ function CostsPage() {
 function CampingPage() {
   return (
     <div className="page">
-      <h2>⛺ Campingi</h2>
+      <h2>⛺ Campingi na Trasie</h2>
       {CAMPING_DATA.map((c, i) => (
         <div key={i} className="camping-card">
           <h3>{c.name}</h3>
           <p><strong>Noc:</strong> {c.night}</p>
+          <p><strong>Status:</strong> {c.status}</p>
           <p><strong>Cena:</strong> {c.price}</p>
-          <p><strong>Facilities:</strong> {c.facilities}</p>
-          <p><strong>Web:</strong> <a href={`https://${c.website}`} target="_blank" rel="noopener">{c.website}</a></p>
+          <p><strong>Udogodnienia:</strong> {c.facilities}</p>
           <p><strong>Tel:</strong> {c.phone}</p>
+          <p><strong>Strona:</strong> <a href={c.website.startsWith('http') ? c.website : `https://${c.website}`} target="_blank" rel="noopener">Przejdź do strony kempingu →</a></p>
         </div>
       ))}
     </div>
