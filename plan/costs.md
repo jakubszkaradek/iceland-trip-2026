@@ -9,8 +9,8 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 
 | Pozycja | Koszt (ISK) | Koszt (PLN) | Na osobę (ISK) | Na osobę (PLN) | Uwagi |
 |---|---|---|---|---|---|
-| **Auto: Sheep Car Rental (Toyota RAV4 4×4)** | ~188 000 ISK | **1 364 PLN / os.** (5 456 PLN total)* | ~47 000 ISK | **1 364 PLN** | **263 PLN zaliczka + 1 101 PLN dopłaty na miejscu** (per osoba; jeśli kwota 1364 PLN to łącznie na 4 os., wtedy zaledwie 341 PLN/os!). Auto podstawione na lotnisko KEF i zwrot na KEF. |
-| **Dodatkowi kierowcy (3 osoby)** | 6 000 ISK | 174 PLN | 1 500 ISK | 43.50 PLN | 3× 2 000 ISK (Kuba + Paulina, Natalia, Klara). |
+| **Auto: Sheep Car Rental (Toyota RAV4 4×4)** | ~188 000 ISK | **1 364 PLN / os.** (5 456 PLN łącznie za grupę) | ~47 000 ISK | **1 364 PLN** | **263 PLN zaliczka / os.** (1 052 PLN wpłacone) + **1 101 PLN dopłata / os.** (4 404 PLN na miejscu na KEF). Auto podstawione pod terminal KEF i zwrot na KEF. |
+| **Dodatkowi kierowcy (3 osoby)** | 6 000 ISK | 174 PLN | 1 500 ISK | 43.50 PLN | 3× 2 000 ISK (Kuba w cenie + Paulina, Natalia, Klara). |
 | **Paliwo (diesel, ~1 500 km)** | 36 000 ISK | 1 044 PLN | 9 000 ISK | 261 PLN | Średnie spalanie ~7.5 l/100km, ~112 litrów po ~320 ISK/l. |
 | **Camping 1: Hvolsvöllur** | 8 000 ISK | 232 PLN | 2 000 ISK | 58 PLN | Noc 17→18.09 (~2 000 ISK/os). |
 | **Camping 2: Skaftafell** | 10 000 ISK | 290 PLN | 2 500 ISK | 72.50 PLN | Noc 18→19.09 (~2 500 ISK/os, u stóp lodowca). |
@@ -19,7 +19,7 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 | **Camping 5: Reykjavík Eco** | 5 155 ISK | 150 PLN | 1 289 ISK | 37.50 PLN | Noc 21→22.09 (parcela namiotowa 3 555 ISK + 4× 400 ISK podatek miejski). |
 | **Opłaty parkingowe (Parka.is)** | 8 500 ISK | 247 PLN | 2 125 ISK | 61.75 PLN | Þingvellir, Seljalandsfoss, Reynisfjara, Skaftafell, Jökulsárlón, Fjaðrárgljúfur, Kirkjufell, Ytri Tunga, Reykjavík. |
 | **Opłata drogowa Hvalfjörður** | 0 ISK | 0 PLN | 0 ISK | 0 PLN | Tunel pod fiordem na drodze nr 1 jest bezpłatny. |
-| **SUMA WSPÓLNE** | — | — | — | **~2 029 PLN/os** | *(Przy 1364 PLN/os za auto)* |
+| **SUMA WSPÓLNE** | — | — | — | **~2 029 PLN/os** | *(5 456 PLN za auto + paliwo + kempingi + parkingi)* |
 
 ---
 
@@ -67,8 +67,8 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 ---
 
 ## 5. Zasady Rozliczania i Kontroli Kosztów
-
-1. **Aplikacja Splitwise**: Zainstalować w 4 osoby przed wylotem. Wpisywać każdy rachunek natychmiast po transakcji (waluta: ISK lub PLN).
+ 
+1. **Dedykowana aplikacja webowa (PWA)**: Dostępna pod adresem **[jakubszkaradek.github.io/iceland-trip-2026/](https://jakubszkaradek.github.io/iceland-trip-2026/)**. Zintegrowana z chmurą Supabase w czasie rzeczywistym. Każdy z 4 uczestników (Kuba, Paulinka, Natu, Klara) loguje się na telefonie, ma wskaźnik ile budżetu zostało do wydania, szybkie kafelki (Bónus, Paliwo, Parking, Kemping) oraz automatyczny podział na wydatki wspólne (÷4) i osobiste.
 2. **Karty bezprowizyjne**: Kuba i Paulina płacą Revolutem / mBankiem bez spreadu walutowego.
-3. **Płatności za parkingi (Parka.is)**: Podpiąć jedną kartę do aplikacji Parka.is pod numer rejestracyjny auta z Sheep. Pod koniec wyjazdu zsumować całą historię transakcji z Parka.is i wrzucić jednym wpisem do Splitwise.
+3. **Płatności za parkingi (Parka.is)**: Podpiąć jedną kartę do aplikacji Parka.is pod numer rejestracyjny auta z Sheep. Po opłaceniu kliknąć kafelek "Parking" w naszej aplikacji webowej.
 4. **Paliwo**: Płacić wyłącznie kartą z fizycznym PIN-em. Tankować do pełna, nie brać opcji "Full tank pre-authorization" na 25 000 ISK jeśli konto ma niski stan, lecz wbijać stałą kwotę (np. 5 000 lub 8 000 ISK).

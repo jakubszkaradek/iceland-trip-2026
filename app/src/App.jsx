@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate, useNavigate, Link, useLocation } from 'react-router-dom'
+import { supabase } from './supabaseClient'
 import './App.css'
 
 // ============ DATA ============
@@ -180,13 +181,13 @@ const setUser = (u) => localStorage.setItem('iceland_user', u)
 const clearUser = () => localStorage.removeItem('iceland_user')
 
 const DEFAULT_COSTS = [
-  { id: 1, user: 'kuba', desc: 'Auto Sheep Car — zaliczka', amount: 263, currency: 'PLN', split: 'all', date: 'Wpłacone' },
-  { id: 2, user: 'kuba', desc: 'Auto Sheep Car — dopłata KEF', amount: 1101, currency: 'PLN', split: 'all', date: 'Na miejscu' },
-  { id: 3, user: 'kuba', desc: 'Airbnb Snorrabraut 71 (pokój)', amount: 760, currency: 'PLN', split: 'all', date: 'Opłacone' },
-  { id: 4, user: 'kuba', desc: 'Lot WizzAir w 2 strony (Kuba)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
-  { id: 5, user: 'paulinka', desc: 'Lot WizzAir w 2 strony (Paulina)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
-  { id: 6, user: 'natu', desc: 'Lot WizzAir w 2 strony (Natalia)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
-  { id: 7, user: 'klara', desc: 'Lot WizzAir w 2 strony (Klara)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
+  { id: '1', user: 'kuba', desc: 'Auto Sheep Car — zaliczka (4× 263 PLN)', amount: 1052, currency: 'PLN', split: 'all', category: 'Auto', date: 'Wpłacone' },
+  { id: '2', user: 'kuba', desc: 'Auto Sheep Car — dopłata KEF (4× 1100 PLN)', amount: 4400, currency: 'PLN', split: 'all', category: 'Auto', date: 'Do opłacenia na KEF' },
+  { id: '3', user: 'kuba', desc: 'Airbnb Snorrabraut 71 (pokój 4 os.)', amount: 760, currency: 'PLN', split: 'all', category: 'Nocleg', date: 'Opłacone' },
+  { id: '4', user: 'kuba', desc: 'Lot WizzAir w 2 strony (Kuba)', amount: 1200, currency: 'PLN', split: 'personal', category: 'Lot', date: 'Opłacone' },
+  { id: '5', user: 'paulinka', desc: 'Lot WizzAir w 2 strony (Paulina)', amount: 1200, currency: 'PLN', split: 'personal', category: 'Lot', date: 'Opłacone' },
+  { id: '6', user: 'natu', desc: 'Lot WizzAir w 2 strony (Natalia)', amount: 1200, currency: 'PLN', split: 'personal', category: 'Lot', date: 'Opłacone' },
+  { id: '7', user: 'klara', desc: 'Lot WizzAir w 2 strony (Klara)', amount: 1200, currency: 'PLN', split: 'personal', category: 'Lot', date: 'Opłacone' },
 ]
 
 function getCosts() {
@@ -350,104 +351,366 @@ function PackingPage() {
 }
 
 function CostsPage() {
-  const [costs, setCosts] = useState(getCosts())
+  const [costs, setCosts] = useState(() => getCosts())
+  const [loading, setLoading] = useState(false)
+  const [isSyncing, setIsSyncing] = useState(false)
   const [desc, setDesc] = useState('')
   const [amount, setAmount] = useState('')
   const [currency, setCurrency] = useState('PLN')
   const [splitMode, setSplitMode] = useState('all')
+  const [category, setCategory] = useState('Inne')
+  const [filter, setFilter] = useState('all') // 'all', 'shared', 'mine'
+  const [budgetLimit, setBudgetLimit] = useState(() => {
+    return parseFloat(localStorage.getItem('iceland_budget_limit') || '4500')
+  })
+  const [isEditingBudget, setIsEditingBudget] = useState(false)
+  const [tempBudget, setTempBudget] = useState('4500')
   const currentUser = getUser()
 
-  const addCost = (e) => {
+  const ISK_TO_PLN = 0.029
+
+  // Load from Supabase on mount
+  useEffect(() => {
+    loadCloudCosts()
+    const channel = supabase
+      .channel('public:expenses')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'expenses' }, () => {
+        loadCloudCosts(true)
+      })
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
+  }, [])
+
+  async function loadCloudCosts(silent = false) {
+    if (!silent) setLoading(true)
+    try {
+      const { data, error } = await supabase
+        .from('expenses')
+        .select('*')
+        .order('created_at', { ascending: false })
+
+      if (!error && data && data.length > 0) {
+        setCosts(data)
+        saveCosts(data)
+      }
+    } catch (e) {
+      console.warn('Offline mode / local cache fallback', e)
+    } finally {
+      if (!silent) setLoading(false)
+    }
+  }
+
+  const addCost = async (e) => {
     e.preventDefault()
-    if (!desc || !amount) return
+    if (!desc.trim() || !amount) return
+    const numAmount = parseFloat(amount)
+    if (isNaN(numAmount) || numAmount <= 0) return
+
+    setIsSyncing(true)
     const newCost = {
-      id: Date.now(),
+      id: Date.now().toString(),
       user: currentUser,
-      desc,
-      amount: parseFloat(amount),
+      desc: desc.trim(),
+      amount: numAmount,
       currency,
       split: splitMode,
+      category,
       date: new Date().toLocaleDateString('pl-PL'),
     }
+
     const next = [newCost, ...costs]
     setCosts(next)
     saveCosts(next)
     setDesc('')
     setAmount('')
+
+    try {
+      await supabase.from('expenses').insert([{
+        user: newCost.user,
+        desc: newCost.desc,
+        amount: newCost.amount,
+        currency: newCost.currency,
+        split: newCost.split,
+        category: newCost.category,
+        date: newCost.date,
+      }])
+    } catch (err) {
+      console.error('Supabase save error', err)
+    } finally {
+      setIsSyncing(false)
+      loadCloudCosts(true)
+    }
   }
 
-  const deleteCost = (id) => {
+  const deleteCost = async (id) => {
     const next = costs.filter(c => c.id !== id)
     setCosts(next)
     saveCosts(next)
+    try {
+      await supabase.from('expenses').delete().eq('id', id)
+    } catch (err) {
+      console.error('Supabase delete error', err)
+    }
   }
 
-  const totalPLN = costs.filter(c => c.currency === 'PLN').reduce((s, c) => s + c.amount, 0)
-  const totalISK = costs.filter(c => c.currency === 'ISK').reduce((s, c) => s + c.amount, 0)
+  const handleSaveBudget = (e) => {
+    e.preventDefault()
+    const val = parseFloat(tempBudget)
+    if (!isNaN(val) && val > 0) {
+      setBudgetLimit(val)
+      localStorage.setItem('iceland_budget_limit', val.toString())
+      setIsEditingBudget(false)
+    }
+  }
 
-  const perUserPLN = {}
-  const perUserISK = {}
-  Object.keys(USERS).forEach(u => { perUserPLN[u] = 0; perUserISK[u] = 0 })
+  const toPLN = (amt, curr) => curr === 'ISK' ? amt * ISK_TO_PLN : amt
+
+  // Calculations per user
+  const userOwes = { kuba: 0, paulinka: 0, natu: 0, klara: 0 }
+  const userPaid = { kuba: 0, paulinka: 0, natu: 0, klara: 0 }
+
   costs.forEach(c => {
-    if (c.currency === 'PLN') perUserPLN[c.user] = (perUserPLN[c.user] || 0) + c.amount
-    else perUserISK[c.user] = (perUserISK[c.user] || 0) + c.amount
+    const pln = toPLN(c.amount, c.currency)
+    if (userPaid[c.user] !== undefined) {
+      userPaid[c.user] += pln
+    }
+    if (c.split === 'all') {
+      const share = pln / 4
+      Object.keys(userOwes).forEach(u => { userOwes[u] += share })
+    } else {
+      if (userOwes[c.user] !== undefined) {
+        userOwes[c.user] += pln
+      }
+    }
   })
+
+  const mySpent = userOwes[currentUser] || 0
+  const remainingBudget = budgetLimit - mySpent
+  const budgetPercent = Math.min(100, Math.max(0, Math.round((mySpent / budgetLimit) * 100)))
+
+  const groupTotalPLN = Object.values(userPaid).reduce((s, v) => s + v, 0)
+  const groupRemainingPLN = (budgetLimit * 4) - groupTotalPLN
+
+  // Filtered expenses
+  const filteredCosts = costs.filter(c => {
+    if (filter === 'shared') return c.split === 'all'
+    if (filter === 'mine') return c.user === currentUser || c.split === 'all'
+    return true
+  })
+
+  const CATEGORIES = [
+    { label: '⛽ Paliwo', desc: 'Paliwo N1 / Orkan', split: 'all', cat: 'Paliwo' },
+    { label: '🛒 Bónus', desc: 'Zakupy Bónus', split: 'all', cat: 'Jedzenie' },
+    { label: '⛺ Kemping', desc: 'Kemping', split: 'all', cat: 'Nocleg' },
+    { label: '🅿️ Parking', desc: 'Parking Parka.is', split: 'all', cat: 'Parking' },
+    { label: '☕ Kawiarnia', desc: 'Kawa / Przekąski', split: 'all', cat: 'Gastronomia' },
+    { label: '♨️ Basen', desc: 'Wejście na basen', split: 'all', cat: 'Relaks' },
+    { label: '👤 Osobisty', desc: 'Wydatek własny', split: 'personal', cat: 'Osobiste' },
+  ]
 
   return (
     <div className="page">
-      <h2>💰 Koszty</h2>
-
-      <div className="costs-summary">
-        <div className="cost-total">
-          <span>Razem PLN</span>
-          <strong>{totalPLN.toFixed(0)} PLN</strong>
-        </div>
-        <div className="cost-total">
-          <span>Razem ISK</span>
-          <strong>{totalISK.toFixed(0)} ISK</strong>
-        </div>
+      <div className="costs-header-row">
+        <h2>💰 Wydatki & Budżet</h2>
+        <span className="sync-badge">
+          {isSyncing ? '🟡 Zapisywanie...' : loading ? '🟡 Ładowanie...' : '🟢 W chmurze'}
+        </span>
       </div>
 
-      <div className="costs-per-user">
-        {Object.entries(USERS).map(([k, v]) => (
-          <div key={k} className="user-cost">
-            <span>{v.emoji} {v.name}</span>
-            <span>{(perUserPLN[k] || 0).toFixed(0)} PLN / {(perUserISK[k] || 0).toFixed(0)} ISK</span>
+      {/* ===== GAUGE / ILE ZOSTAŁO ===== */}
+      <div className="budget-card">
+        <div className="budget-top">
+          <div>
+            <span className="budget-label">Pozostało Ci do wydania:</span>
+            <div className={`budget-amount ${remainingBudget < 500 ? 'budget-danger' : remainingBudget < 1200 ? 'budget-warning' : 'budget-ok'}`}>
+              {remainingBudget.toFixed(0)} <span className="budget-currency">PLN</span>
+            </div>
           </div>
-        ))}
+          <button className="budget-edit-btn" onClick={() => { setIsEditingBudget(!isEditingBudget); setTempBudget(budgetLimit.toString()) }}>
+            {isEditingBudget ? '✕' : '✏️ Limit'}
+          </button>
+        </div>
+
+        {isEditingBudget && (
+          <form className="budget-edit-form" onSubmit={handleSaveBudget}>
+            <input
+              type="number"
+              value={tempBudget}
+              onChange={e => setTempBudget(e.target.value)}
+              placeholder="Twój limit (PLN)"
+              autoFocus
+            />
+            <button type="submit">Zapisz</button>
+          </form>
+        )}
+
+        <div className="progress-bar-bg">
+          <div
+            className={`progress-bar-fill ${budgetPercent > 90 ? 'bg-danger' : budgetPercent > 70 ? 'bg-warning' : 'bg-ok'}`}
+            style={{ width: `${budgetPercent}%` }}
+          />
+        </div>
+
+        <div className="budget-stats-row">
+          <span>Wykorzystano: <strong>{budgetPercent}%</strong> ({mySpent.toFixed(0)} PLN)</span>
+          <span>Limit: <strong>{budgetLimit.toFixed(0)} PLN</strong></span>
+        </div>
+
+        <div className="group-budget-mini">
+          <span>👥 Cała ekipa: wydano <strong>{groupTotalPLN.toFixed(0)} PLN</strong> | zostało: <strong>{groupRemainingPLN.toFixed(0)} PLN</strong></span>
+        </div>
       </div>
 
-      <form className="cost-form" onSubmit={addCost}>
-        <input placeholder="Opis (np. paliwo, parking)" value={desc} onChange={e => setDesc(e.target.value)} />
-        <div className="cost-row">
-          <input type="number" placeholder="Kwota" value={amount} onChange={e => setAmount(e.target.value)} step="0.01" />
-          <select value={currency} onChange={e => setCurrency(e.target.value)}>
-            <option value="PLN">PLN</option>
-            <option value="ISK">ISK</option>
-          </select>
+      {/* ===== KTO ILE WYDAŁ (PODGLĄD GRUPOWY) ===== */}
+      <div className="costs-per-user">
+        {Object.entries(USERS).map(([k, v]) => {
+          const spent = userOwes[k] || 0
+          const left = budgetLimit - spent
+          return (
+            <div key={k} className={`user-cost ${k === currentUser ? 'current-user-card' : ''}`}>
+              <div className="user-cost-header">
+                <strong>{v.emoji} {v.name}</strong>
+                <span className="user-cost-spent">{spent.toFixed(0)} PLN</span>
+              </div>
+              <span className="user-cost-sub">Zostało: <strong>{left.toFixed(0)} PLN</strong></span>
+            </div>
+          )
+        })}
+      </div>
+
+      {/* ===== SZYBKIE DODAWANIE (MOBILE FIRST) ===== */}
+      <div className="quick-add-card">
+        <h3>+ Dodaj wydatek</h3>
+
+        {/* Quick chips */}
+        <div className="category-chips">
+          {CATEGORIES.map((c, i) => (
+            <button
+              key={i}
+              type="button"
+              className="chip-btn"
+              onClick={() => { setDesc(c.desc); setSplitMode(c.split); setCategory(c.cat) }}
+            >
+              {c.label}
+            </button>
+          ))}
         </div>
-        <select value={splitMode} onChange={e => setSplitMode(e.target.value)}>
-          <option value="all">Dzielone na 4</option>
-          <option value="personal">Tylko moje</option>
-        </select>
-        <button type="submit">+ Dodaj koszt</button>
-      </form>
+
+        <form className="cost-form" onSubmit={addCost}>
+          <input
+            placeholder="Opis (np. Paliwo N1, Bónus Selfoss)"
+            value={desc}
+            onChange={e => setDesc(e.target.value)}
+            required
+          />
+
+          <div className="cost-amount-row">
+            <input
+              type="number"
+              step="any"
+              placeholder="Kwota"
+              value={amount}
+              onChange={e => setAmount(e.target.value)}
+              className="amount-input"
+              required
+            />
+            <div className="currency-toggle">
+              <button
+                type="button"
+                className={`curr-btn ${currency === 'PLN' ? 'active' : ''}`}
+                onClick={() => setCurrency('PLN')}
+              >
+                PLN
+              </button>
+              <button
+                type="button"
+                className={`curr-btn ${currency === 'ISK' ? 'active' : ''}`}
+                onClick={() => setCurrency('ISK')}
+              >
+                ISK
+              </button>
+            </div>
+          </div>
+
+          {currency === 'ISK' && amount && (
+            <div className="isk-preview">
+              ≈ {(parseFloat(amount) * ISK_TO_PLN).toFixed(1)} PLN (kurs 100 ISK = 2.90 PLN)
+            </div>
+          )}
+
+          <div className="split-toggle-row">
+            <button
+              type="button"
+              className={`split-btn ${splitMode === 'all' ? 'active' : ''}`}
+              onClick={() => setSplitMode('all')}
+            >
+              👥 Wspólne (÷4)
+            </button>
+            <button
+              type="button"
+              className={`split-btn ${splitMode === 'personal' ? 'active' : ''}`}
+              onClick={() => setSplitMode('personal')}
+            >
+              👤 Tylko moje
+            </button>
+          </div>
+
+          <button type="submit" className="submit-cost-btn" disabled={isSyncing}>
+            {isSyncing ? 'Zapisuję w chmurze...' : '✓ Zapisz wydatek'}
+          </button>
+        </form>
+      </div>
+
+      {/* ===== LISTA WYDATKÓW Z FILTREM ===== */}
+      <div className="history-header">
+        <h3>Historia wydatków ({costs.length})</h3>
+        <div className="filter-chips">
+          <button className={`filter-btn ${filter === 'all' ? 'active' : ''}`} onClick={() => setFilter('all')}>Wszystkie</button>
+          <button className={`filter-btn ${filter === 'shared' ? 'active' : ''}`} onClick={() => setFilter('shared')}>Wspólne</button>
+          <button className={`filter-btn ${filter === 'mine' ? 'active' : ''}`} onClick={() => setFilter('mine')}>Moje</button>
+        </div>
+      </div>
 
       <div className="costs-list">
-        {costs.map(c => (
-          <div key={c.id} className="cost-entry">
-            <div className="cost-info">
-              <span className="cost-desc">{USERS[c.user]?.emoji} {c.desc}</span>
-              <span className="cost-meta">{c.date} | {c.split === 'all' ? '÷4' : 'osobiste'}</span>
-            </div>
-            <div className="cost-amount">
-              <strong>{c.amount.toFixed(0)} {c.currency}</strong>
-              {c.user === currentUser && (
-                <button className="cost-delete" onClick={() => deleteCost(c.id)}>✕</button>
-              )}
-            </div>
-          </div>
-        ))}
+        {filteredCosts.length === 0 ? (
+          <p className="empty-costs">Brak wydatków w tej kategorii.</p>
+        ) : (
+          filteredCosts.map(c => {
+            const plnVal = toPLN(c.amount, c.currency)
+            return (
+              <div key={c.id} className="cost-entry">
+                <div className="cost-info">
+                  <div className="cost-title-row">
+                    <span className="cost-user-badge">{USERS[c.user]?.emoji || '👤'} {USERS[c.user]?.name || c.user}</span>
+                    <span className="cost-desc">{c.desc}</span>
+                  </div>
+                  <span className="cost-meta">
+                    {c.date} • {c.split === 'all' ? 'Wspólne (÷4)' : 'Osobisty'}
+                  </span>
+                </div>
+                <div className="cost-amount-box">
+                  <strong>{c.amount.toLocaleString()} {c.currency}</strong>
+                  {c.currency === 'ISK' && (
+                    <span className="cost-pln-sub">≈ {plnVal.toFixed(0)} PLN</span>
+                  )}
+                  {c.split === 'all' && (
+                    <span className="cost-share-sub">({(plnVal / 4).toFixed(0)} PLN/os)</span>
+                  )}
+                  <button
+                    className="cost-delete"
+                    onClick={() => deleteCost(c.id)}
+                    title="Usuń wydatek"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </div>
+            )
+          })
+        )}
       </div>
     </div>
   )
