@@ -57,7 +57,7 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 ## DZIEŃ 2: 18.09 (Czwartek) — Wodospady, Czarne Plaże i Lawowe Pola
 
 * **Dystans**: ~250 km | **Czas jazdy**: ~3h 15m
-* **Trasa nawigacji**: [Google Maps — Dzień 2](https://www.google.com/maps/dir/Hvolsvollur/Seljalandsfoss/Gljufrabui/Skogafoss/Kvernufoss/Dyrholaey/Reynisfjara/Skaftafell)
+* **Trasa nawigacji**: [Google Maps — Dzień 2](https://www.google.com/maps/dir/?api=1&origin=Hvolsvollur&destination=Skaftafell&waypoints=Seljalandsfoss%7CSkogafoss%7CDyrholaey%7CReynisfjara+Beach)
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
@@ -65,7 +65,7 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 | **08:30-10:00** | **Seljalandsfoss & Gljúfrabúi** | Seljalandsfoss: wejście za kurtynę wody (pełne przeciwdeszczówki!). Gljúfrabúi: ukryty w kanionie 500m dalej. | Parka.is (1 000 ISK) |
 | **10:30-12:30** | **Skógafoss & Kvernufoss** | Skógafoss: gigant 60m + schody na punkt widokowy. Kvernufoss: 15 min marszu obok muzeum, urokliwy i bez tłumów. | Parking darmowy |
 | **13:00-14:00** | **Dyrhólaey** | Półwysep, klify bazaltowe, widok na bezkresny czarny piasek i łuk skalny. | Parking darmowy |
-| **14:20-15:30** | **Reynisfjara** | Słynna czarna plaża, bazaltowe kolumny Hálsanefshellir, iglice Reynisdrangar. | Parka.is (1 000 ISK) |
+| **14:20-15:30** | **Reynisfjara Beach** | Słynna czarna plaża, bazaltowe kolumny Hálsanefshellir, iglice Reynisdrangar. | Parka.is (1 000 ISK) |
 | **15:30-18:00** | Przejazd do Skaftafell | Droga nr 1 przez Eldhraun (ogromne pola lawy porośnięte zielonym mchem) i piaski Skeiðarársandur. | — |
 | **18:00** | **Skaftafell Camping** | Położony w Parku Narodowym Vatnajökull u stóp lodowca. Nocleg na trawie, baza pod lodowiec. | ~2 500 ISK/os |
 
@@ -74,10 +74,10 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 
 ---
 
-## DZIEŃ 3: 19.09 (Piątek) — Lodowiec, Błękitne Diamenty & Kanion
+## DZIEŃ 3: 19.09 (Piątek) — Lodowiec, Diamenty, Kanion & Basen Vík
 
 * **Dystans**: ~270 km | **Czas jazdy**: ~3h 30m
-* **Trasa nawigacji**: [Google Maps — Dzień 3](https://www.google.com/maps/dir/Skaftafell/Jokulsarlon/Diamond+Beach/Fjadrargljufur/Vik)
+* **Trasa nawigacji**: [Google Maps — Dzień 3](https://www.google.com/maps/dir/?api=1&origin=Skaftafell&destination=Vik&waypoints=Jokulsarlon%7CDiamond+Beach%7CFjadrargljufur%7CSundlaug+Vikur)
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
@@ -87,14 +87,14 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 | **15:30-17:00** | Powrót na zachód | Jazda Ring Road nr 1 w kierunku Kirkjubæjarklaustur. | — |
 | **17:00-18:30** | **Fjaðrárgljúfur** | Baśniowy kanion o głębokości 100 m i długości 2 km. Spacer krawędzią w złotym świetle popołudnia. | Parka.is (1 000 ISK) |
 | **19:15** | **Vík Campsite** | Kemping w Vík. Ogrzewana kuchnia, pralki i suszarki (szybkie suszenie wilgotnych rzeczy po lodowcu). | ~2 500 ISK/os |
-| **Wieczór** | Opcja: Basen w Vík | Miejski basen termalny w Vík z gorącymi baliami (hot tubs) — regeneracja mięśni. | ~1 000 ISK/os |
+| **20:00-21:30** | **♨️ Basen w Vík (Sundlaug Víkurskóla)** | **POTWIERDZONE**: Miejski basen termalny z gorącymi baliami (hot tubs 38-42°C) i sauną — genialna regeneracja po lodowcu! | ~1 050 ISK (~30 PLN) |
 
 ---
 
 ## DZIEŃ 4: 20.09 (Sobota) — Wielki Transfer na Półwysep Snæfellsnes
 
 * **Dystans**: ~370 km | **Czas jazdy**: ~4h 45m (najdłuższy dzień w aucie)
-* **Trasa nawigacji**: [Google Maps — Dzień 4](https://www.google.com/maps/dir/Vik/Borgarnes/Ytri+Tunga/Budakirkja/Arnarstapi/Londrangar)
+* **Trasa nawigacji**: [Google Maps — Dzień 4](https://www.google.com/maps/dir/?api=1&origin=Vik&destination=Arnarstapi&waypoints=Borgarnes%7CYtri+Tunga%7CBudakirkja%7CLondrangar)
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
@@ -106,43 +106,40 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 | **17:30-18:15** | **Lóndrangar** | Dwie olbrzymie bazaltowe iglice wulkaniczne (75 m i 61 m) wyłaniające się z oceanu. | Parking darmowy |
 | **18:45** | **Arnarstapi Camping** | Rozbicie namiotu tuż przy krawędzi klifów. Legendarny zachód słońca i widoki. | ~2 000 ISK/os |
 
-> [!IMPORTANT]
-> **Długi odcinek drogowy**: Pomiędzy Vík a Borgarnes przejeżdżacie obok Reykjavíku. Omijamy stolicę tunelem pod Hvalfjörður (darmowy, tunel pod dnem fiordu na drodze nr 1).
-
 ---
 
-## DZIEŃ 5: 21.09 (Niedziela) — Magia Snæfellsnes & Powrót do Stolicy
+## DZIEŃ 5: 21.09 (Niedziela) — Magia Snæfellsnes, Powrót do Stolicy & Kvika Footbath
 
 * **Dystans**: ~230 km | **Czas jazdy**: ~3h 00m
-* **Trasa nawigacji**: [Google Maps — Dzień 5](https://www.google.com/maps/dir/Arnarstapi/Djupalonssandur/Saxholl+Crater/Kirkjufell/Reykjavik+Campsite)
+* **Trasa nawigacji**: [Google Maps — Dzień 5](https://www.google.com/maps/dir/?api=1&origin=Arnarstapi&destination=Reykjavik&waypoints=Djupalonssandur%7CSaxholl+Crater%7CKirkjufell%7CKvika+Footbath)
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
 | **08:30** | Start z Arnarstapi | Śniadanie, zwinięcie biwaku, ruszamy na zachodni cypel półwyspu. | — |
 | **09:00-10:30** | **Djúpalónssandur** | Czarna plaża z gładkimi kamykami, szczątki brytyjskiego trawlera Epine GY7 z 1948 r., kamienie siły wikingów (Aflraunasteinar). | Parking darmowy |
 | **10:45-11:30** | **Saxhóll Crater** | Wygasły krater wulkaniczny o czerwonym żużlu. Metalowe schody na krawędź, widok na lodowiec Snæfellsjökull. | Parking darmowy |
-| **12:15-13:45** | **Kirkjufell & Kirkjufellsfoss** | Góra w kształcie stożka/kapelusza czarownicy (słynna góra z Gry o Tron) wraz z dwukaskadowym wodospadem. | Parka.is (1 000 ISK) |
-| **14:00-17:00** | Trasa do Reykjavíku | Powrót drogą 54 i 1 na południe do stolicy. | — |
+| **12:15-13:45** | **Kirkjufell & Kirkjufellsfoss** | Góra w kształcie stożka/kapelusza czarownicy wraz z dwukaskadowym wodospadem. | Parka.is (1 000 ISK) |
+| **14:00-17:00** | Trasa do Reykjavíku | Powrót drogą 54 i 1 na południe do stolicy tunelem pod Hvalfjörður. | — |
 | **17:00-18:00** | **Reykjavík Eco Campsite** | Zameldowanie na kempingu miejskim (Laugardalur). Dostęp do świetnej infrastruktury i kuchni. | ~3 555 ISK + 400 ISK/os |
-| **21:00-23:00** | **Grótta Lighthouse** | Cypel Seltjarnarnes na zachodnim krańcu Reykjavíku — ciemne miejsce, polowanie na zorzę polarną! | Parking darmowy |
+| **20:30-22:30** | **♨️ Kvika Footbath (Grótta)** | **POTWIERDZONE**: Kamienna miska z ciepłą wodą geotermalną nad brzegiem oceanu przy latarni morskiej Grótta. Moczenie nóg + polowanie na zorzę! | Darmowe |
 
 ---
 
 ## DZIEŃ 6: 22.09 (Poniedziałek) — Stolica, Geotermia Reykjanes & Wylot
 
 * **Dystans**: ~110 km | **Czas jazdy**: ~2h 00m
-* **Trasa nawigacji**: [Google Maps — Dzień 6](https://www.google.com/maps/dir/Reykjavik+Campsite/Hallgrimskirkja/Harpa/Seltun/Brimketill/Bridge+Between+Continents/Keflavik+Airport)
+* **Trasa nawigacji**: [Google Maps — Dzień 6](https://www.google.com/maps/dir/?api=1&origin=Reykjavik&destination=Keflavik+Airport&waypoints=Seltun+Geothermal+Area%7CBrimketill+lava+rock+pool%7CBridge+Between+Continents)
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
 | **08:30-09:30** | Reykjavík Eco | Ostatnie zwinięcie namiotów, segregacja śmieci, pakowanie walizek do RAV4. | — |
-| **09:45-13:00** | **Reykjavík City Walk** | Hallgrímskirkja (monumentalny kościół), tęczowa ulica Skólavörðustígur, sala koncertowa Harpa, rzeźba Sun Voyager. | Parka.is strefa P2/P3 |
+| **09:45-13:00** | **Reykjavík City Walk** | Hallgrímskirkja, tęczowa ulica Skólavörðustígur, sala Harpa, rzeźba Sun Voyager. | Parka.is strefa P2/P3 |
 | **13:00-14:30** | **Obiad w restauracji** | Jedyny restauracyjny posiłek wyjazdu. Sprawdzone opcje GF dla Kuby (np. Cafe Loki, Messinn, Reykjavik Fish). | ~2 500-4 000 ISK/os |
-| **14:45-16:00** | **Seltún (Krýsuvík)** | Bulgoczące błota siarkowe, dymiące fumarole, jaskrawe żółto-czerwone minerały. | Parking darmowy / Parka |
-| **16:30-17:15** | **Brimketill** | Naturalny basen wyrzeźbiony przez uderzenia oceanu w zastygłą czarną lawę. | Parking darmowy |
-| **17:45-18:30** | **Bridge Between Continents** | Kładka nad szczeliną oddzielającą płytę północnoamerykańską od eurazjatyckiej. | Parking darmowy |
-| **18:45-20:15** | **Basen w Keflavíku** | Relaksująca kąpiel w gorących źródłach/basenie termalnym Waterworld Keflavík przed lotem nocnym. | ~1 500 ISK/os |
-| **20:30-21:00** | Tankowanie & Oczyszczenie | Tankowanie RAV4 pod korek na stacji przy lotnisku (N1/Orkan). Wyrzucenie śmieci z auta. | Karta z PIN |
-| **21:00** | **Zdanie auta Sheep** | Przekazanie RAV4 w biurze Sheep Car Rental w Keflavíku, transfer busem na terminal. | — |
-| **21:30-23:50** | Lotnisko KEF | Odprawa bagażowa WizzAir, kontrola bezpieczeństwa, strefa wolnocłowa. | — |
+| **14:45-16:00** | **Seltún (Krýsuvík)** | Bulgoczące błota siarkowe, dymiące fumarole, jaskrawe żółto-czerwone minerały. | Parking darmowy |
+| **16:30-17:15** | **Brimketill lava rock pool** | *(W Google Maps szukaj: „Brimketill lava rock pool”)* — naturalny basen lawowy rzeźbiony przez uderzenia oceanu. | Parking darmowy |
+| **17:45-18:30** | **Bridge Between Continents** | Kładka nad szczeliną płyt tektonicznych (Most Między Kontynentami). | Parking darmowy |
+| **18:45-20:15** | **♨️ Basen w Keflavíku / Sky Lagoon (OPCJA)** | Jeśli starczy czasu: gorąca kąpiel przed lotem nocnym w Waterworld Keflavík (~1 500 ISK) lub Sky Lagoon. | ~1 500 ISK/os |
+| **20:30-21:00** | Tankowanie na lotnisku | Tankowanie RAV4 pod korek na stacji przy lotnisku (N1/Orkan). | Karta z PIN |
+| **21:00** | **🚗 Zdanie auta Sheep na lotnisku KEF** | Przekazanie RAV4 bezpośrednio pod terminalem lotniska KEF. | — |
+| **21:30-23:50** | Lotnisko KEF | Odprawa bagażowa WizzAir, kontrola bezpieczeństwa. | — |
 | **23:50** | **WYLOT DO WARSZAWY** | Lądowanie na Lotnisku Chopina 23.09 ok. 05:40 rano. | — |
