@@ -82,5 +82,7 @@ Zanim zamkniecie walizki, zróbcie wideorozmowę lub szybkie spotkanie i sprawd�
 * **17:45**: Zbiórka na Lotnisku Chopina w Warszawie (Terminal A).
 * **18:30**: Kontrola bezpieczeństwa.
 * **20:15**: Boarding na lot WizzAir.
-* **20:55**: Wylot do Keflavíku.
+* **20:55**: Wylot do Keflavíku (1 200 PLN/os).
 * **~23:00 IST**: Lądowanie w Islandii. Przestawienie zegarków o 2 godziny wstecz!
+* **23:30**: Odbiór RAV4 4x4 podstawionego pod terminal KEF (Sheep Car Rental) + dopłata 1 101 PLN na miejscu.
+* **00:00-00:45**: Dojazd własnym autem do Airbnb (Snorrabraut 71, 190 PLN/os). Auto stoi pod oknem gotowe na rano.

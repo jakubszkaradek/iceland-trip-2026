@@ -9,7 +9,7 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 
 | Pozycja | Koszt (ISK) | Koszt (PLN) | Na osobę (ISK) | Na osobę (PLN) | Uwagi |
 |---|---|---|---|---|---|
-| **Auto: Sheep Car Rental (Toyota RAV4 4×4)** | 176 400 ISK | 5 115 PLN | 44 100 ISK | 1 279 PLN | Cena po zniżce 25% (z 235 200 ISK). W cenie: namiot, śpiwory, maty, kuchenka, Wi-Fi, box dachowy, ubezpieczenie F-roads/opony/szyby. |
+| **Auto: Sheep Car Rental (Toyota RAV4 4×4)** | ~188 000 ISK | **1 364 PLN / os.** (5 456 PLN total)* | ~47 000 ISK | **1 364 PLN** | **263 PLN zaliczka + 1 101 PLN dopłaty na miejscu** (per osoba; jeśli kwota 1364 PLN to łącznie na 4 os., wtedy zaledwie 341 PLN/os!). Auto podstawione na lotnisko KEF i zwrot na KEF. |
 | **Dodatkowi kierowcy (3 osoby)** | 6 000 ISK | 174 PLN | 1 500 ISK | 43.50 PLN | 3× 2 000 ISK (Kuba + Paulina, Natalia, Klara). |
 | **Paliwo (diesel, ~1 500 km)** | 36 000 ISK | 1 044 PLN | 9 000 ISK | 261 PLN | Średnie spalanie ~7.5 l/100km, ~112 litrów po ~320 ISK/l. |
 | **Camping 1: Hvolsvöllur** | 8 000 ISK | 232 PLN | 2 000 ISK | 58 PLN | Noc 17→18.09 (~2 000 ISK/os). |
@@ -17,9 +17,9 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 | **Camping 3: Vík** | 10 000 ISK | 290 PLN | 2 500 ISK | 72.50 PLN | Noc 19→20.09 (~2 500 ISK/os, suszarnie, ciepła kuchnia). |
 | **Camping 4: Arnarstapi** | 8 000 ISK | 232 PLN | 2 000 ISK | 58 PLN | Noc 20→21.09 (~2 000 ISK/os). |
 | **Camping 5: Reykjavík Eco** | 5 155 ISK | 150 PLN | 1 289 ISK | 37.50 PLN | Noc 21→22.09 (parcela namiotowa 3 555 ISK + 4× 400 ISK podatek miejski). |
-| **Opłaty parkingowe (Parka.is)** | 8 500 ISK | 247 PLN | 2 125 ISK | 61.75 PLN | Þingvellir (1000), Seljalandsfoss (1000), Reynisfjara (1000), Skaftafell (1000), Jökulsárlón (1000), Fjaðrárgljúfur (1000), Kirkjufell (1000), Ytri Tunga (500), Reykjavík (1000). |
+| **Opłaty parkingowe (Parka.is)** | 8 500 ISK | 247 PLN | 2 125 ISK | 61.75 PLN | Þingvellir, Seljalandsfoss, Reynisfjara, Skaftafell, Jökulsárlón, Fjaðrárgljúfur, Kirkjufell, Ytri Tunga, Reykjavík. |
 | **Opłata drogowa Hvalfjörður** | 0 ISK | 0 PLN | 0 ISK | 0 PLN | Tunel pod fiordem na drodze nr 1 jest bezpłatny. |
-| **SUMA WSPÓLNE** | **268 055 ISK** | **7 774 PLN** | **67 014 ISK** | **~1 944 PLN/os** | |
+| **SUMA WSPÓLNE** | — | — | — | **~2 029 PLN/os** | *(Przy 1364 PLN/os za auto)* |
 
 ---
 
@@ -27,30 +27,32 @@ Profil wyjazdu: studencki, optymalny kosztowo, namioty, gotowanie z palnika, 1 p
 
 | Pozycja | Koszt (ISK) | Koszt (PLN) | Kategoria | Uwagi |
 |---|---|---|---|---|
-| **Lot WizzAir (Warszawa ↔ Keflavík)** | — | ~650 PLN | Stałe (opłacone) | Bagaż kabinowy 55×40×23 + podręczny 40×30×20. |
-| **Airbnb Noc 0 (Snorrabraut 71)** | — | 187.50 PLN | Stałe (opłacone) | 750 PLN łącznie / 4 osoby. |
-| **Trekking po lodowcu Vatnajökull** | 13 500 ISK | ~390 PLN | Atrakcja must-have | Sprzęt w cenie (raki, czekan, uprząż, przewodnik). Zniżka Sheep lub Troll/Arctic. |
+| **Lot WizzAir (Warszawa ↔ Keflavík)** | — | **1 200 PLN** | Stałe (opłacone) | Lot w dwie strony za osobę. |
+| **Airbnb Noc 0 (Snorrabraut 71)** | — | **190 PLN** | Stałe (opłacone) | 190 PLN / osoba (760 PLN łącznie za pokój). |
+| **Trekking po lodowcu Vatnajökull** | 13 500 ISK | ~390 PLN | Atrakcja must-have | Sprzęt w cenie (raki, czekan, uprząż, przewodnik). |
 | **Wstęp krater Kerið** | 600 ISK | ~17.50 PLN | Atrakcja | Bilet wstępu na krawędź kaldery. |
-| **Jedzenie z Bónus (Selfoss / zakupy)** | 7 500 ISK | ~215 PLN | Wyżywienie | Masło orzechowe, skyr, ser, chleb/wafelki ryżowe, owoce, orzechy, woda. |
-| **Prowiant zabrany z Polski** | — | ~120 PLN | Wyżywienie | Liofilizaty, Huel, zupki, owsianki, batony (kupione w PL). |
+| **Jedzenie z Bónus (Selfoss / zakupy)** | 7 500 ISK | ~215 PLN | Wyżywienie | Masło orzechowe, skyr, ser, chleb/wafelki ryżowe, owoce, orzechy. |
+| **Prowiant zabrany z Polski** | — | ~120 PLN | Wyżywienie | Liofilizaty, Huel, zupki, owsianki, batony. |
 | **Obiad w restauracji (Reykjavík, Dzień 6)** | 3 500 ISK | ~100 PLN | Gastronomia | Zupa rybna / danie obiadowe + opcja GF dla Kuby. |
 | **Baseny termalne (opcja studencka)** | 2 500 ISK | ~72.50 PLN | Relaks | Basen w Vík (1 000 ISK) + basen w Keflavíku przed lotem (1 500 ISK). |
 | *(Opcja zamiast miejskich: Sky Lagoon)* | *(6 990 ISK)* | *(~203 PLN)* | *(Wariant premium)* | *(Zamiast miejskiego w Keflavíku, opcjonalnie).* |
-| **Rezerwa awaryjna (kawa, prysznice na żetony)** | 2 000 ISK | ~58 PLN | Bufor | Prysznice na kempingach (niektóre mają automaty na monety 100-300 ISK). |
-| **SUMA INDYWIDUALNE** | **29 600 ISK** | **~1 810 PLN** | | |
+| **Rezerwa awaryjna (kawa, prysznice na żetony)** | 2 000 ISK | ~58 PLN | Bufor | Prysznice na kempingach / drobiazgi. |
+| **SUMA INDYWIDUALNE** | **29 600 ISK** | **~2 363 PLN** | | |
 
 ---
 
 ## 3. Podsumowanie Całkowitego Budżetu Na Osobę
 
-| Kategoria wydatków | Koszt (ISK) | Koszt (PLN) | % Całości |
-|---|---|---|---|
-| **Część wspólna (auto, paliwo, kempingi, parkingi)** | 67 014 ISK | 1 944 PLN | 52% |
-| **Bilety lotnicze + Airbnb noc 0** | — | 838 PLN | 22% |
-| **Atrakcje (Lodowiec + Kerið + 2 baseny termalne)** | 16 600 ISK | 480 PLN | 13% |
-| **Wyżywienie (Bónus + Polska + 1 obiad)** | 11 000 ISK | 435 PLN | 12% |
-| **Bufor awaryjny** | 2 000 ISK | 58 PLN | 1% |
-| **RAZEM NA OSOBĘ (Szacunek realistyczny)** | **~96 614 ISK** | **~3 755 PLN** | **100%** |
+| Kategoria wydatków | Koszt (PLN) | % Całości |
+|---|---|---|
+| **Część wspólna (auto, paliwo, kempingi, parkingi)** | **~2 029 PLN** | 46% |
+| **Bilety lotnicze WizzAir (w 2 strony)** | **1 200 PLN** | 27% |
+| **Airbnb noc 0 (Snorrabraut 71)** | **190 PLN** | 4% |
+| **Atrakcje (Lodowiec + Kerið + 2 baseny termalne)** | **~480 PLN** | 11% |
+| **Wyżywienie (Bónus + Polska + 1 obiad)** | **~435 PLN** | 10% |
+| **Bufor awaryjny** | **~58 PLN** | 2% |
+| **RAZEM NA OSOBĘ (Pełny kosztorys rzeczywisty)** | **~4 392 PLN** | **100%** |
+*(Uwaga: jeśli 1 364 PLN za auto to kwota łączna na całą 4-osobową grupę, a nie per osoba, całkowity koszt spada do **~3 368 PLN / os.**).*
 
 ---
 

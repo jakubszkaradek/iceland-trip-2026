@@ -12,10 +12,10 @@
 
 ## 🛫 Loty (WizzAir, zarezerwowane i opłacone)
 
-| | Data | Godzina | Lotnisko | Czas lotu |
-|--|------|---------|----------|-----------|
-| ✈️ TAM | 16.09 (wt) | **20:55** | Warszawa → Keflavik | ~4h |
-| ✈️ POWRÓT | 22.09 (pn) | **~23:50** | Keflavik → Warszawa | ~4h |
+| | Data | Godzina | Lotnisko | Czas lotu | Koszt |
+|--|------|---------|----------|-----------|-------|
+| ✈️ TAM | 16.09 (wt) | **20:55** | Warszawa → Keflavik | ~4h | **1 200 PLN / os.** (w obie strony) |
+| ✈️ POWRÓT | 22.09 (pn) | **~23:50** | Keflavik → Warszawa | ~4h | w cenie |
 
 > [!IMPORTANT]
 > Islandia = UTC+0. Polska we wrześniu = UTC+2. Lądujecie ~23:00 czasu islandzkiego (= 01:00 polskiego). Zmiana strefy = bonus 2h!
@@ -33,12 +33,12 @@
 | Parametr | Wartość |
 |----------|---------|
 | Samochód | Toyota RAV4 **4×4** (F-roads OK) |
-| Okres | 7 dni (17.09 odbiór → 22.09 zdanie ~21:00) |
-| Cena przed zniżką | 235 200 ISK |
-| Zniżka konkursowa | **25%** |
-| **Cena po zniżce** | **~176 400 ISK (~5 100 PLN / ~1 275 PLN/os)** |
-| Płatność | Zaliczka wpłacona, reszta na miejscu |
-| Dodatkowi kierowcy | 3× 2 000 ISK = **6 000 ISK (~170 PLN)** |
+| Podstawienie & Zwrot | **Bezpośrednio na lotnisku Keflavík (KEF)** 🛬 |
+| Okres | 7 dni (16.09 noc odbiór na KEF → 22.09 zwrot ~21:00 na KEF) |
+| Zaliczka wpłacona | **263 PLN** |
+| Dopłata na miejscu | **1 101 PLN** |
+| Łączny koszt auta | **1 364 PLN / os.** (lub 1 364 PLN łącznie wg rozliczenia) |
+| Dodatkowi kierowcy | Wszyscy 4 kierowcy zgłoszeni w umowie |
 
 **W cenie wypożyczenia:**
 - 🏕️ Namiot 4-osobowy (2 sypialnie)
@@ -49,53 +49,29 @@
 - 📦 Roof box 330L
 - 🛡️ Ubezpieczenie: opony + szyba + F-roads
 
-> [!WARNING]
-> **Odbiór auta**: 17 września rano (po nocce w Airbnb). Ustalić dokładną godzinę z Sheep!
-> **Zdanie auta**: 22 września ~21:00 przy lotnisku KEF.
-
 ---
 
 ## 🏠 Noclegi
 
 | Noc | Miejsce | Typ | Koszt | Kontakt/Info |
 |-----|---------|-----|-------|-------------|
-| 16→17 | **Snorrabraut 71, Reykjavik** | Airbnb | 750 PLN (opłacone) | Pokój w mieście |
+| 16→17 | **Snorrabraut 71, Reykjavik** | Airbnb | **190 PLN / os.** (760 PLN łącznie) | Dojazd autem z KEF w 45 min |
 | 17→18 | **Hvolsvöllur Camping** | Namiot | ~2000 ISK/os | Osłonięty drzewami, kuchnia, prysznice |
 | 18→19 | **Skaftafell Camping** | Namiot | ~2500 ISK/os | Ogromny, cały rok, u stóp lodowca |
 | 19→20 | **Vík Campsite** | Namiot | ~2500 ISK/os | Ogrzewana kuchnia, pralki, suszarki |
 | 20→21 | **Arnarstapi Camping** | Namiot | ~2000 ISK/os | ⭐ "Petarda" wg koleżanki — super widoki, prysznice |
 | 21→22 | **Reykjavík Eco Campsite** | Namiot | ~3555 ISK + 400 ISK/os | 2km od centrum, woda termalna |
 
-> [!TIP]
-> **Campingi na Islandii** — większość nie wymaga rezerwacji namiotowej. Przyjeżdżasz, stawiasz, płacisz. ALE — we wrześniu mogą być tłumy na Skaftafell i Vík. Sprawdźcie czy Arnarstapi jest na pewno otwarty do 22 września (sezon kończy się różnie).
-
-### 📞 Numery do campingów (DO WERYFIKACJI PRZEZ USERA)
-| Camping | Strona | Telefon |
-|---------|--------|---------|
-| Hvolsvöllur | tjalda.is | ⚠️ Sprawdzić |
-| Skaftafell | vjp.is | ⚠️ Sprawdzić |
-| Vík | vik.is/camping | ⚠️ Sprawdzić |
-| Arnarstapi | arnarstapicenter.is | ⚠️ Sprawdzić |
-| Reykjavík Eco | reykjavikcampsite.is | ⚠️ Sprawdzić |
-
-> [!IMPORTANT]
-> **USER MUSI**: Zadzwonić/napisać do Arnarstapi Center (arnarstapicenter.is) i potwierdzić dostępność 20-21 września. Koleżanka Pauliny polecała ten camping jako "petardę" — ale trzeba potwierdzić, że jest czynny w trzecim tygodniu września.
-
 ---
 
 ## 🗺️ Trasa Dzień po Dniu
 
-### NOC 0 — 16.09 (Wtorek) — Przylot
+### NOC 0 — 16.09 (Wtorek) — Przylot & Odbiór Auta
 - **20:55** Wylot z Warszawy
 - **~23:00 IST** Lądowanie Keflavik
-- Transfer do **Airbnb Snorrabraut 71** (autobus Flybus / taxi / Sheep Car pickup?)
-- Spanie. Odpoczynek. Zero planów.
-
-> [!IMPORTANT]
-> **USER MUSI USTALIĆ**: Jak dojedziecie z lotniska KEF do Airbnb w Reykjaviku? Opcje:
-> 1. **Flybus** (~3 500 ISK/os, ~50 min) — rezerwacja online
-> 2. **Taxi** (~17 000 ISK, ~45 min) — drogo ale wygodnie w 4
-> 3. **Sheep Car Rental odbiór nocą** — zapytaj czy robią nocne odbiory na lotnisku. Jeśli tak → macie auto od razu i jedziecie do Airbnb. To byłoby najlepsze!
+- **23:30** **Odbiór Toyoty RAV4 bezpośrednio pod terminalem KEF** (podstawiona przez Sheep Car Rental) + dopłata 1 101 PLN
+- **00:00-00:45** Przejazd własnym autem drogą 41 do Airbnb (Snorrabraut 71, Reykjavik)
+- Spanie. Zero stresu o transfery.
 
 ---
 
@@ -104,13 +80,13 @@
 
 | Godzina | Punkt | Czas | Uwagi |
 |---------|-------|------|-------|
-| 08:30 | Odbiór auta z Sheep Car Rental | 30-60min | Sprawdzenie sprzętu, podpisanie umowy |
-| 09:30-11:30 | **Þingvellir** — Park Narodowy UNESCO | 2h | Spacer szczeliną Almannagjá |
-| 12:00-13:30 | **Geysir / Strokkur** | 1.5h | Gejzer co 6-8 min |
-| 13:45-15:00 | **Gullfoss** | 1.25h | Dwustopniowa kaskada |
+| 08:30 | Start prosto ze Snorrabraut 71 | — | Auto macie już pod domem! Pakujecie podręczne rzeczy i w drogę |
+| 09:15-11:15 | **Þingvellir** — Park Narodowy UNESCO | 2h | Spacer szczeliną Almannagjá |
+| 11:45-13:15 | **Geysir / Strokkur** | 1.5h | Gejzer co 6-8 min |
+| 13:30-14:45 | **Gullfoss** | 1.25h | Dwustopniowa kaskada |
 | 15:30-17:00 | **Selfoss — Bónus** | 1.5h | ZAKUPY: masło orzechowe, skyr, boczek, orzechy, banany |
 | 17:15-18:00 | **Kerið** (opcjonalnie) | 45min | Krater wulkaniczny |
-| 18:30-19:15 | **Hvolsvöllur Camping** | — | Rozbicie namiotów PRZED zmrokiem (zachód ~19:46) |
+| 18:45-19:30 | **Hvolsvöllur Camping** | — | Rozbicie namiotów PRZED zmrokiem (zachód ~19:46) |
 
 **Google Maps**: [Dzień 1 — Golden Circle](https://www.google.com/maps/dir/Reykjavik/Þingvellir/Geysir/Gullfoss/Selfoss/Kerið/Hvolsvöllur)
 

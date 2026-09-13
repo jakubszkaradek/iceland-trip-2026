@@ -21,15 +21,16 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 
 ---
 
-## NOC 0: 16.09 (Wtorek) — Dolot & Baza w Stolicy
+## NOC 0: 16.09 (Wtorek) — Dolot & Odbiór Auta na Lotnisku
 
-* **20:55**: Wylot z Warszawy (WizzAir).
+* **20:55**: Wylot z Warszawy (WizzAir, 1 200 PLN/os).
 * **~23:00 IST**: Lądowanie Keflavík (bonus 2h dzięki strefie czasowej UTC+0).
-* **23:45-00:45**: Transfer do stolicy:
-  * Opcja A (preferowana): Nocny odbiór RAV4 z Sheep Car Rental na lotnisku.
-  * Opcja B: Flybus z KEF do przystanku Snorrabraut (~3 500 ISK/os).
-* **Nocleg**: Airbnb, Snorrabraut 71, Reykjavík (opłacone: 750 PLN).
-* **Priorytet**: Szybki sen. Rano wczesna pobudka i start.
+* **23:30-00:00**: **ODBIÓR AUTA BEZPOŚREDNIO NA LOTNISKU KEF**:
+  * Sheep Car Rental podstawia Toyotę RAV4 4x4 z pakietem campingowym pod terminal!
+  * Oględziny auta, podpisanie protokołu, dopłata 1 101 PLN na miejscu.
+* **00:00-00:45**: Dojazd własnym autem z lotniska do Airbnb (~50 km drogą 41).
+* **Nocleg**: Airbnb, Snorrabraut 71, Reykjavík (190 PLN/os).
+* **Priorytet**: Szybki sen. Auto stoi pod oknem spakowane ze sprzętem.
 
 ---
 
@@ -40,11 +41,11 @@ Objazdówka 4×4 (Toyota RAV4). 4 osoby. Zwięźle, konkretnie, czasy, dystanse,
 
 | Godzina | Miejsce | Akcja / Opis | Płatność / Parking |
 |---|---|---|---|
-| **08:30-09:15** | Sheep Car Rental | Odbiór auta (RAV4, namiot, śpiwory, butle, Wi-Fi, roof box). Oględziny karoserii. | Opłata reszty + kierowcy |
-| **09:30-11:30** | **Þingvellir** | Park Narodowy UNESCO. Spacer szczeliną Almannagjá (rozłam płyt tektonicznych), Öxarárfoss. | Parka.is (1 000 ISK) |
-| **12:00-13:30** | **Geysir / Strokkur** | Pole geotermalne Haukadalur. Strokkur strzela wrzątkiem co 6-8 min na 20-30m. | Parking darmowy |
-| **13:45-15:00** | **Gullfoss** | Potężny dwustopniowy wodospad kanionu rzeki Hvíta. Obowiązkowy hardshell (mocno pyli). | Parking darmowy |
-| **15:45-17:00** | **Selfoss (Bónus)** | **GŁÓWNE ZAKUPY SPOŻYWCZE**: masło orzechowe, banany, skyr, boczek, orzechy, woda/herbata. Tankowanie N1/Orkan. | Karta z PIN |
+| **08:30** | Start z Airbnb | Auto już macie! Pakujecie podręczne rzeczy i ruszacie prosto ze Snorrabraut na drogę nr 36. | — |
+| **09:15-11:15** | **Þingvellir** | Park Narodowy UNESCO. Spacer szczeliną Almannagjá (rozłam płyt tektonicznych), Öxarárfoss. | Parka.is (1 000 ISK) |
+| **11:45-13:15** | **Geysir / Strokkur** | Pole geotermalne Haukadalur. Strokkur strzela wrzątkiem co 6-8 min na 20-30m. | Parking darmowy |
+| **13:30-14:45** | **Gullfoss** | Potężny dwustopniowy wodospad kanionu rzeki Hvíta. Obowiązkowy hardshell (mocno pyli). | Parking darmowy |
+| **15:30-17:00** | **Selfoss (Bónus)** | **GŁÓWNE ZAKUPY SPOŻYWCZE**: masło orzechowe, banany, skyr, boczek, orzechy, woda/herbata. Tankowanie N1/Orkan. | Karta z PIN |
 | **17:15-18:00** | **Kerið** | Krater wulkaniczny z jeziorem kalderowym o intensywnym turkusowym kolorze. | Wstęp: ~600 ISK/os |
 | **18:45-19:30** | **Hvolsvöllur Camping** | Rozbicie obozu PRZED zmrokiem (zachód ~19:46). Gotowanie kolacji w kuchni. | ~2 000 ISK/os |
 

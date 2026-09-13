@@ -10,10 +10,10 @@ Planowanie wycieczki na Islandię (16-22 września 2026) dla 4 osób: Kuba, Paul
 - **Klara**: koleżanka
 
 ## Kluczowe daty
-- **Wylot**: 16.09 o 20:55 WizzAir z Warszawy → Keflavik (~23:00 IST)
+- **Wylot**: 16.09 o 20:55 WizzAir z Warszawy → Keflavik (~23:00 IST) — 1200 PLN / os. w 2 strony
 - **Powrót**: 22.09 o ~23:50 z Keflavik → Warszawa
-- **Airbnb noc 0**: Snorrabraut 71, Reykjavik (750 PLN)
-- **Auto**: Sheep Car Rental — Toyota RAV4 4x4 + pełen pakiet campingowy
+- **Airbnb noc 0**: Snorrabraut 71, Reykjavik — 190 PLN / os. (760 PLN łącznie)
+- **Auto**: Sheep Car Rental — Toyota RAV4 4x4 + pełen pakiet campingowy (podstawione pod lotnisko KEF i zwrot na lotnisku KEF)
 
 ## Bagaż
 - 4× walizka kabinowa: 55×40×23cm
@@ -50,10 +50,10 @@ busy-bardeen/
 
 ## Auto — Sheep Car Rental
 - Toyota RAV4 4x4 (potwierdzone)
+- Podstawienie i zwrot: bezpośrednio na lotnisku Keflavík (KEF)
+- Finanse: 263 PLN zaliczka (wpłacona) + 1101 PLN dopłata na miejscu (na grupę/osobę wg rozliczenia)
 - Zawarte: WiFi router, kuchenka gazowa, 4 krzesełka, roof box 330L
 - 2× materac dmuchany 140cm, namiot 4-os (2 sypialnie)
 - Zestaw kuchenny, 4× śpiwór + poduszka, 3 butle gazu
 - Ubezpieczenie opon + szyb + F-roads
 - 4 kierowców (1 w cenie + 3× 2000 ISK)
-- Zaliczka wpłacona, reszta na miejscu
-- Zniżka 25% (konkurs)

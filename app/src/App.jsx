@@ -12,26 +12,32 @@ const USERS = {
 
 const ROUTE_DATA = [
   {
-    day: 0, date: '16.09', weekday: 'Wt', title: 'Przylot',
-    summary: 'Wylot z Warszawy 20:55 → Keflavik ~23:00 → Airbnb',
-    km: 0, drive: '—',
+    day: 0, date: '16.09', weekday: 'Wt', title: 'Przylot & Odbiór Auta KEF',
+    summary: 'Wylot WAW 20:55 → KEF ~23:00 → Odbiór RAV4 na lotnisku → Airbnb',
+    km: 50, drive: '45 min',
     camping: 'Airbnb Snorrabraut 71, Reykjavik',
-    points: ['✈️ Wylot WAW 20:55', '🛬 Lądowanie KEF ~23:00', '🏠 Airbnb Snorrabraut 71'],
-    mapUrl: '',
+    points: [
+      '✈️ Wylot WAW 20:55 (1200 PLN/os)',
+      '🛬 Lądowanie KEF ~23:00 IST',
+      '🚗 Odbiór Toyoty RAV4 pod terminalem KEF (Sheep Car)',
+      '💳 Dopłata na lotnisku 1101 PLN (zaliczka 263 PLN)',
+      '🏠 Dojazd do Airbnb Snorrabraut 71 (190 PLN/os)',
+    ],
+    mapUrl: 'https://www.google.com/maps/dir/Keflavik+Airport/Snorrabraut+71,+Reykjavik',
   },
   {
     day: 1, date: '17.09', weekday: 'Śr', title: 'Golden Circle',
-    summary: 'Þingvellir → Geysir → Gullfoss → Bónus → Kerið',
+    summary: 'Start z Airbnb (auto pod oknem!) → Þingvellir → Geysir → Gullfoss → Bónus → Kerið',
     km: 230, drive: '3h 15min',
     camping: 'Hvolsvöllur Camping',
     points: [
-      '08:30 Odbiór auta Sheep Car',
-      '09:30 Þingvellir — UNESCO, szczelina Almannagjá',
-      '12:00 Geysir/Strokkur — gejzer co 6-8 min',
-      '13:45 Gullfoss — dwustopniowa kaskada',
-      '15:30 Selfoss Bónus — ZAKUPY',
+      '08:30 Start prosto z Airbnb (auto gotowe)',
+      '09:15 Þingvellir — UNESCO, szczelina Almannagjá',
+      '11:45 Geysir/Strokkur — gejzer co 6-8 min',
+      '13:30 Gullfoss — dwustopniowa kaskada',
+      '15:30 Selfoss Bónus — ZAKUPY na kolejne dni',
       '17:15 Kerið — krater (opcja)',
-      '18:30 Hvolsvöllur Camping',
+      '18:45 Hvolsvöllur Camping',
     ],
     mapUrl: 'https://www.google.com/maps/dir/Reykjavik/Þingvellir/Geysir/Gullfoss/Selfoss/Hvolsvöllur',
   },
@@ -106,9 +112,9 @@ const ROUTE_DATA = [
       '13:30 🍽️ Obiad na mieście (GF!)',
       '14:00 Seltún — pola geotermalne',
       '16:00 Brimketill — klify',
-      '19:00 Basen termalny (opcja)',
-      '21:00 Zdanie auta KEF',
-      '23:50 ✈️ WYLOT',
+      '19:00 Basen termalny (Keflavík / Sky Lagoon)',
+      '21:00 🚗 Zwrot auta bezpośrednio na lotnisku KEF',
+      '23:50 ✈️ WYLOT do Warszawy',
     ],
     mapUrl: 'https://www.google.com/maps/dir/Reykjavik/Seltún/Brimketill/Keflavik+Airport',
   },
@@ -171,8 +177,23 @@ const getUser = () => localStorage.getItem('iceland_user')
 const setUser = (u) => localStorage.setItem('iceland_user', u)
 const clearUser = () => localStorage.removeItem('iceland_user')
 
+const DEFAULT_COSTS = [
+  { id: 1, user: 'kuba', desc: 'Auto Sheep Car — zaliczka', amount: 263, currency: 'PLN', split: 'all', date: 'Wpłacone' },
+  { id: 2, user: 'kuba', desc: 'Auto Sheep Car — dopłata KEF', amount: 1101, currency: 'PLN', split: 'all', date: 'Na miejscu' },
+  { id: 3, user: 'kuba', desc: 'Airbnb Snorrabraut 71 (pokój)', amount: 760, currency: 'PLN', split: 'all', date: 'Opłacone' },
+  { id: 4, user: 'kuba', desc: 'Lot WizzAir w 2 strony (Kuba)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
+  { id: 5, user: 'paulinka', desc: 'Lot WizzAir w 2 strony (Paulina)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
+  { id: 6, user: 'natu', desc: 'Lot WizzAir w 2 strony (Natalia)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
+  { id: 7, user: 'klara', desc: 'Lot WizzAir w 2 strony (Klara)', amount: 1200, currency: 'PLN', split: 'personal', date: 'Opłacone' },
+]
+
 function getCosts() {
-  try { return JSON.parse(localStorage.getItem('iceland_costs') || '[]') } catch { return [] }
+  try {
+    const raw = localStorage.getItem('iceland_costs')
+    return raw ? JSON.parse(raw) : DEFAULT_COSTS
+  } catch {
+    return DEFAULT_COSTS
+  }
 }
 function saveCosts(costs) { localStorage.setItem('iceland_costs', JSON.stringify(costs)) }
 
