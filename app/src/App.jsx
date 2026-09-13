@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Navigate, useNavigate, Link, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate, useNavigate, Link, useLocation } from 'react-router-dom'
 import './App.css'
 
 // ============ DATA ============
@@ -477,7 +477,7 @@ function Layout({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/route" element={<ProtectedRoute><Layout><RoutePage /></Layout></ProtectedRoute>} />
@@ -487,7 +487,7 @@ function App() {
         <Route path="/faq" element={<ProtectedRoute><Layout><FaqPage /></Layout></ProtectedRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
