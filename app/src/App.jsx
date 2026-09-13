@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate, useNavigate, Link, useLocation } from 'react-router-dom'
 import { supabase } from './supabaseClient'
+import { TripStatusWidget } from './TripStatusWidget'
 import './App.css'
 
 // ============ DATA ============
@@ -281,6 +282,7 @@ function Login() {
       <div className="login-card">
         <h1>🇮🇸 Islandia 2026</h1>
         <p className="login-subtitle">16-22 Września</p>
+        <TripStatusWidget isCompact={false} />
         <form onSubmit={handleLogin}>
           <input placeholder="Login" value={username} onChange={e => setUsername(e.target.value)} autoFocus />
           <input placeholder="Hasło" type="password" value={password} onChange={e => setPassword(e.target.value)} />
@@ -319,6 +321,7 @@ function Nav() {
           {user?.emoji} {user?.name} ✕
         </span>
       </div>
+      <TripStatusWidget isCompact={true} />
       <div className="nav-tabs">
         {tabs.map(t => (
           <Link key={t.path} to={t.path} className={`nav-tab ${location.pathname === t.path ? 'active' : ''}`}>
