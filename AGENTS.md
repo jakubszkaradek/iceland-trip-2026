@@ -38,7 +38,7 @@ busy-bardeen/
 ├── assets/                    # Screeny, zdjęcia, linki od usera
 ├── agency/                    # Oddziały agency-agents (project-management, research, strategy, specialized)
 ├── plan/                      # Kompletny zestaw 9 plików markdown z planem
-└── app/                       # Web app (Vite + React)
+└── app/                       # Web app (Vite + React) — LIVE: https://jakubszkaradek.github.io/iceland-trip-2026/
 ```
 
 ## Źródła wiedzy
