@@ -173,21 +173,23 @@ const CAMPING_DATA = [
 ]
 
 const FAQ_DATA = [
-  { q: 'Woda z kranu?', a: 'TAK — najlepsza na świecie. Nie kupujcie butelkowanej!' },
-  { q: 'Gotówka?', a: 'NIE potrzebna. Wszędzie karta. Ale PIN WYMAGANY na stacjach paliw!' },
-  { q: 'Prędkość na drogach?', a: '90 km/h na asfalcie, 80 km/h na szutrze. Mandaty są ASTRONOMICZNE.' },
-  { q: 'F-roads?', a: 'Macie ubezpieczenie F-roads. RAV4 4x4 da radę. Ale sprawdzajcie road.is!' },
-  { q: 'Parkingi?', a: 'Parka.is / EasyPark! Kamery skanują tablice. Bez opłaty = kara!' },
-  { q: 'Pogoda?', a: 'vedur.is każdego ranka. Zmienia się co godzinę. 7-12°C dzień, 2-5°C noc.' },
-  { q: 'Tankowanie?', a: 'Tankujcie gdy widzicie stację! Na południu 100+ km między stacjami.' },
-  { q: 'Sneaker waves?', a: 'Na Reynisfjara NIE podchodzić do wody. Fale zabijają ludzi co roku.' },
-  { q: 'Zorza polarna?', a: 'Realne szanse od połowy września. Wyjedźcie poza miasto, apka Aurora Forecast.' },
-  { q: 'Jedzenie import?', a: 'Max 3 kg/os, fabrycznie pakowane. Zakaz surowego mięsa/nabiału.' },
-  { q: 'Limit prędkości F-roads?', a: 'Maksymalnie 40-50 km/h. Kamienie lecą w podwozie i szyby.' },
-  { q: 'Wildcamp?', a: 'ZAKAZANY bez zgody właściciela. Tylko oficjalne campingi!' },
-  { q: 'Karta parkingowa Klary (parkingi)?', a: 'W Reykjavíku (strefy P1-P4) z wyłożoną za szybą niebieską kartą parkowanie jest w 100% DARMOWE. W Þingvellir zgłaszamy tablice w Visitor Centre Hakid, by skasować opłatę Parka.is. W Skaftafell parking w cenie kempingu.' },
-  { q: 'Zniżki dla opiekuna Klary?', a: 'TAK! Na miejskich basenach termalnych (Sundlaug Vík, Laugardalslaug) oraz w muzeach opiekun osoby z niepełnosprawnością (fylgdarmaður) wchodzi ZA DARMO (100% zniżki) po okazaniu karty Klary!' },
-  { q: 'Gdzie obiad D6 (dla Natu & Kuby GF)?', a: '1) Messinn (Reykjavík) — świeże ryby na miedzianych patelniach, bezpieczne dla celiakii. 2) Reykjavík Fish — bezpieczne GF Fish & Chips przy porcie. 3) Kaffi Duus (Keflavík marina) — 5 min od lotniska przed zwrotem RAV4!' },
+  { q: 'Woda z kranu?', a: 'TAK — najlepsza na świecie. Nie kupujcie butelkowanej! Ciepła pachnie siarką (geotermia) — używać tylko do mycia, nie do picia.' },
+  { q: 'Gotówka?', a: 'NIE potrzebna. Wszędzie karta. Ale fizyczna karta z kodem PIN WYMAGANA na stacjach paliw (terminale w słupkach)!' },
+  { q: 'Prędkość na drogach?', a: '90 km/h na asfalcie, 80 km/h na szutrze, 50 km/h w miastach. Mandaty są ASTRONOMICZNE (2000-6000 PLN). Fotoradary w tunelach.' },
+  { q: 'F-roads i Toyota RAV4?', a: 'Macie pełne ubezpieczenie F-roads od Sheep Car. RAV4 4x4 da radę na lekkich szutrach. Zakaz jazdy off-road (poza drogami) — niszczenie mchu jest przestępstwem!' },
+  { q: 'Parkingi a karta Klary (inwalidzka)?', a: 'W Reykjavíku (strefy P1-P4) z wyłożoną za szybą niebieską europejską kartą parkowanie jest w 100% DARMOWE. W Þingvellir zgłaszamy tablice w Visitor Centre Hakid, by zdjąć opłatę z kamer Parka.is (0 ISK). W Skaftafell parking jest w cenie kempingu.' },
+  { q: 'Stopień niepełnosprawności Klary (umiarkowany)?', a: 'W Islandii nie badają polskich stopni (lekki/umiarkowany/znaczny). Na parkingach liczy się wyłącznie fizyczna Niebieska Karta Parkingowa za szybą. Na miejskich basenach legitymacja osoby niepełnosprawnej uprawnia opiekuna do darmowego wejścia.' },
+  { q: 'Zniżki dla opiekuna Klary (fylgdarmaður)?', a: 'TAK! Na miejskich basenach termalnych (np. Sundlaug Vík, Laugardalslaug) oraz w muzeach miejskich opiekun osoby z niepełnosprawnością wchodzi ZA DARMO (100% zniżki) po okazaniu dokumentu Klary!' },
+  { q: 'Ile spali Toyota RAV4 4x4 z boxem dachowym?', a: 'Realne spalanie to ok. 11.0 l/100 km (box 330L + 4 osoby + 4 walizki + namiot + wiatr). Na trasie 1 650 km wyjdzie ok. 180 litrów paliwa = ok. 59 000 ISK (~1 711 PLN łącznie za auto / ~428 PLN na osobę).' },
+  { q: 'Trekking po lodowcu Sólheimajökull?', a: 'Z Sheep Car Rental (przewodnik Szczepan Lizęga). Koszt 12 000 ISK/os (~348 PLN). Czas: 2.5–3h. Raki, czekan, kask i uprząż w cenie. Wymagane wysokie sztywne buty za kostkę. Brak zniżki na opiekuna (prywatny tour).' },
+  { q: 'Audyt 5 kempingów — co trzeba wiedzieć?', a: 'Wszystkie 5 otwarte we wrześniu (Arnarstapi do 6.10). Rezerwacji online wymaga TYLKO Reykjavík Eco Campsite (Noc 5 — kod PIN do bramy). Ogrzewane kuchnie są w Hvolsvöllur, Vík i Reykjavík; w Skaftafell i Arnarstapi brak (gotowanie z palnika). W Skaftafell prysznice i pralki są darmowe (0 ISK!).' },
+  { q: 'Gdzie obiad D6 (dla Natu & Kuby GF)?', a: '1) Messinn (Reykjavík, Lækjargata) — świeże ryby na miedzianych patelniach, wzorowe procedury bezglutenowe dla celiaków (~3900-4400 ISK). 2) Reykjavík Fish (port) — certyfikowane GF Fish & Chips z osobnej frytury (~2800 ISK). 3) Kaffi Duus (Keflavík marina) — 5 min od lotniska KEF przed zwrotem RAV4!' },
+  { q: 'Celiakia Kuby — jak zamawiać?', a: 'Formułka po angielsku: "I have coeliac disease, strictly no gluten, no wheat, no contamination". Po islandzku: "Ég er með glútenóþol". W Bónusie i Krónanie szukać działu "Glútenfrítt" lub przekreślonego kłosa.' },
+  { q: 'Jak otwierać Google Maps bez błędu "jeden punkt"?', a: 'Klikaj bezpośrednio pinezki 📍 przy punktach lub przycisk "Cała trasa Dnia X w Google Maps". Linki są w natywnym formacie wielopunktowym (dir/A/B/C/D), który ładuje całą trasę na telefonie bez gubienia przystanków.' },
+  { q: 'Pogoda i wiatr?', a: 'vedur.is każdego ranka! Wiatr >15 m/s = trzymaj mocno drzwi auta oburącz (wiatr wyrywa zawiasy!). Wiatr >20 m/s = zakaz rozbijania namiotu (śpimy w aucie).' },
+  { q: 'Sneaker waves na Reynisfjara?', a: 'ŚMIERTELNE NIEBEZPIECZEŃSTWO. Na czarnej plaży nigdy nie odwracaj się plecami do oceanu i nie podchodź do linii wody. Fale wciągają ludzi co roku.' },
+  { q: 'Zorza polarna?', a: 'Wrzesień to doskonały czas (ciemne noce). Sprawdzajcie wskaźnik Kp i zachmurzenie w apce Aurora Forecast / vedur.is. Najlepsze punkty: kempingi poza miastem oraz Kvika Footbath.' },
+  { q: 'Jedzenie w bagażu lotniczym?', a: 'Max 3 kg żywności na osobę, fabrycznie zamknięte (kabanosy paczkowane, liofilizaty, Huel, wafle ryżowe). Całkowity zakaz wwozu surowego mięsa, jaj i niepasteryzowanego nabiału.' },
 ]
 
 const PACKING_SHARED = [

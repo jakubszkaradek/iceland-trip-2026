@@ -104,3 +104,78 @@ Islandczycy podają wiatr w metrach na sekundę (m/s). Pomnóż przez **3.6**, a
 * **Zorza polarna (Northern Lights)**:
   * Widoczna przy bezchmurnym niebie od zmroku (ok. 21:00) do 02:00 w nocy.
   * Kluczowe warunki: KP-index ≥ 2 oraz brak chmur na mapie satelitarnej w aplikacji Hello Aurora.
+
+---
+
+## ♿ 10. Niepełnosprawność, Karta Klary & Opiekun (Fylgdarmaður)
+
+### Parkingi a karta Klary:
+* **Wymóg**: Fizyczna europejska Niebieska Karta Parkingowa (ze zdjęciem i symbolem wózka) wyłożona na podszybiu Toyoty RAV4.
+* **Reykjavík (strefy P1–P4)**: **100% darmowe parkowanie** na wszystkich miejskich płatnych miejscach i kopertach, bez limitu czasu.
+* **Þingvellir (Parka.is)**: Aby kamery nie obciążyły wypożyczalni, po zaparkowaniu na kopercie podejdźcie do Hakid Visitor Centre z kartą Klary i podajcie numer rejestracyjny auta. Obsługa zdejmuje opłatę do 0 ISK.
+* **Skaftafell**: Parking jest bezpłatny dla osób nocujących na kempingu (rano zgłasza się tablice w recepcji).
+* **Stopień umiarkowany**: W Islandii nikt nie weryfikuje polskich stopni (lekki/umiarkowany/znaczny). Liczy się wyłącznie posiadanie unijnej karty. Sama legitymacja osoby niepełnosprawnej (bez niebieskiej karty parkingowej) nie zwalnia z opłat za parkowanie.
+
+### Zniżki dla opiekuna (*fylgdarmaður*):
+* **Miejskie baseny termalne (Sundlaug)**: **100% ZNIŻKI DLA OPIEKUNA!** W Islandii opiekun osoby z niepełnosprawnością (*fylgdarmaður*) wchodzi na miejskie baseny (np. Sundlaug Vík, Sundhöllin) **ZA DARMO (0 ISK)**. Przy kasie mówi się: *"One admission with disability and one companion"*.
+* **Muzea miejskie i państwowe**: Opiekun wchodzi bezpłatnie (100% zniżki).
+* **Trekking po lodowcu**: Brak zniżek na opiekuna (komercyjna usługa przewodnicka z atestowanym sprzętem).
+
+---
+
+## ⛽ 11. Realne Spalanie Toyoty RAV4 4x4 z Boksem Dachowym
+
+* **Fabryczne spalanie**: ~8.5–9.0 l/100 km.
+* **Realne spalanie w warunkach wyprawy**: **11.0 l / 100 km**.
+  * Czynniki: duży boks dachowy 330L (duży opór aerodynamiczny), 4 osoby + bagaże + namiot + garnki (~400 kg ładunku), silny arktyczny wiatr czołowy/boczny.
+* **Koszty paliwa na 1 650 km**:
+  * Łączne zużycie: ok. 180 litrów oleju napędowego (diesel).
+  * Cena diesla na Islandii: ~325 ISK/l (~9.50 PLN/l).
+  * Łączny koszt: ~59 000 ISK = **~1 711 PLN na całe auto** (**~428 PLN / os.**).
+
+---
+
+## 🧊 12. Trekking po Lodowcu Sólheimajökull
+
+* **Organizator**: Sheep Car Rental partners (przewodnik Szczepan Lizęga).
+* **Lokalizacja**: Lodowiec Sólheimajökull (między Skógafoss a Vík).
+* **Cena**: **12 000 ISK / os.** (~348 PLN / os.).
+* **W cenie**: Raki stalowe, czekan, kask wspinaczkowy, uprząż asekuracyjna, polski/angielski przewodnik.
+* **Wymagania**: Własne sztywne buty trekkingowe z podeszwą Vibram powyżej kostki (do raków paskowych), warstwa membranowa (kurtka + spodnie hardshell), rękawice.
+
+---
+
+## ⛺ 13. Audyt 5 Kempingów (Wrzesień 2026)
+
+1. **Hvolsvöllur Camping (Noc 1)**: Otwarty do 01.11. Duża ogrzewana kuchnia, darmowe pralki i suszarki (0 ISK). Płatność na miejscu (walk-in).
+2. **Skaftafell Camping (Noc 2)**: Całoroczny. Darmowe gorące prysznice (0 ISK wg Reglugerð 266/2026), darmowy parking (zgłosić tablice w recepcji rano o 09:00). **⚠️ BRAK ogrzewanej kuchni** (gotowanie z palnika pod klapą bagażnika). Płatność walk-in.
+3. **Vík Campsite (Noc 3)**: Otwarty do 01.11. Duża ogrzewana kuchnia (30–40 osób), prysznic 300 ISK, 500 m do basenu miejskiego Sundlaug Vík. Płatność walk-in.
+4. **Arnarstapi Camping (Noc 4)**: Otwarty do 06.10 (potwierdzone w Parka.is). Darmowe prysznice w cenie. **⚠️ BRAK ogrzewanej kuchni** (zlewy zewnętrzne). Płatność w aplikacji Parka.is. Awaryjny kemping z pełną kuchnią: Ólafsvík (25 km dalej).
+5. **Reykjavík Eco Campsite (Noc 5)**: Całoroczny. **JEDYNY kemping wymagający rezerwacji online z wyprzedzeniem** (reykjavikcampsite.is) w celu uzyskania kodu PIN do szlabanu wjazdowego. Ogrzewana nowoczesna kuchnia, darmowe prysznice geotermalne, darmowa półka żywnościowa i gazowa.
+
+---
+
+## 🍽️ 14. Restauracje na Dzień 6 (Natu & Kuba 100% Celiakia)
+
+1. **MESSINN (Reykjavík, Lækjargata 6b) — NAJLEPSZA OPCJA**:
+   * Ryby podawane na gorących miedzianych patelniach z pieczonymi ziemniakami i sałatką.
+   * **100% bezpieczne dla Kuby**: Restauracja ma ścisły reżim bezglutenowy, patelnie bez mąki na osobnym stanowisku, bezglutenowe pieczywo.
+   * Cena: ~3 900 – 4 400 ISK (~115 – 125 PLN/os.).
+2. **REYKJAVÍK FISH RESTAURANT (Reykjavík, Tryggvagata 8 przy starym porcie)**:
+   * Portowe bistro. Posiada **certyfikowane bezglutenowe Fish & Chips** smażone w osobnej, dedykowanej fryturze oraz tradycyjny *Plokkfiskur*.
+   * Cena: ~2 600 – 3 200 ISK (~75 – 95 PLN/os.).
+3. **KAFFI DUUS (Keflavík marina, 5 min od lotniska KEF)**:
+   * Historyczny lokal nad fiordem tuż obok bazy zwrotu auta Sheep Car Rental.
+   * Doskonała opcja logistyczna na obiad o 19:00 bez stresu o korek na trasie z Reykjavíku przed nocnym lotem.
+   * Świeże ryby, owoce morza, jagnięcina, oznaczone pozycje GF.
+   * Cena: ~3 500 – 4 500 ISK.
+
+---
+
+## 🗺️ 15. Google Maps — Jak unikać błędu „jeden punkt”
+
+* Przy otwieraniu tras z wieloma punktami pośrednimi aplikacja Google Maps na iOS i Androidzie miewa błąd, jeśli link zawiera parametry `?api=1&waypoints=`.
+* **Zasada**: Korzystajcie z gotowych linków w naszej aplikacji internetowej — używają one natywnego formatu:
+  `google.com/maps/dir/Punkt1/Punkt2/Punkt3/...`
+  Dzięki temu telefon ładuje natychmiast kompletną pętlę ze wszystkimi przystankami dnia. W aplikacji każdy punkt ma również własną bezpośrednią pinezkę `📍`.
+
