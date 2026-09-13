@@ -184,6 +184,9 @@ const FAQ_DATA = [
   { q: 'Jedzenie import?', a: 'Max 3 kg/os, fabrycznie pakowane. Zakaz surowego mięsa/nabiału.' },
   { q: 'Limit prędkości F-roads?', a: 'Maksymalnie 40-50 km/h. Kamienie lecą w podwozie i szyby.' },
   { q: 'Wildcamp?', a: 'ZAKAZANY bez zgody właściciela. Tylko oficjalne campingi!' },
+  { q: 'Karta parkingowa Klary (parkingi)?', a: 'W Reykjavíku (strefy P1-P4) z wyłożoną za szybą niebieską kartą parkowanie jest w 100% DARMOWE. W Þingvellir zgłaszamy tablice w Visitor Centre Hakid, by skasować opłatę Parka.is. W Skaftafell parking w cenie kempingu.' },
+  { q: 'Zniżki dla opiekuna Klary?', a: 'TAK! Na miejskich basenach termalnych (Sundlaug Vík, Laugardalslaug) oraz w muzeach opiekun osoby z niepełnosprawnością (fylgdarmaður) wchodzi ZA DARMO (100% zniżki) po okazaniu karty Klary!' },
+  { q: 'Gdzie obiad D6 (dla Natu & Kuby GF)?', a: '1) Messinn (Reykjavík) — świeże ryby na miedzianych patelniach, bezpieczne dla celiakii. 2) Reykjavík Fish — bezpieczne GF Fish & Chips przy porcie. 3) Kaffi Duus (Keflavík marina) — 5 min od lotniska przed zwrotem RAV4!' },
 ]
 
 const PACKING_SHARED = [

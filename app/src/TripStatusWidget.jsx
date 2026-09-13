@@ -1,28 +1,54 @@
 import React, { useState, useEffect } from 'react'
-import { getTripStatus } from './tripSchedule'
+import { getTripStatus, TRIP_EVENTS } from './tripSchedule'
 
 export function TripStatusWidget({ isCompact = false }) {
-  const [simulatedDate, setSimulatedDate] = useState(null)
-  const [status, setStatus] = useState(() => getTripStatus(simulatedDate))
+  const [simulatedIndex, setSimulatedIndex] = useState(null)
+  const [status, setStatus] = useState(() => getTripStatus(null))
   const [isExpanded, setIsExpanded] = useState(!isCompact)
 
   useEffect(() => {
-    setStatus(getTripStatus(simulatedDate))
+    const update = () => {
+      if (simulatedIndex === null) {
+        setStatus(getTripStatus(null))
+      } else {
+        const ev = TRIP_EVENTS[simulatedIndex]
+        if (ev) {
+          const midTime = new Date((ev.start.getTime() + ev.end.getTime()) / 2)
+          setStatus(getTripStatus(midTime))
+        }
+      }
+    }
+    update()
     const timer = setInterval(() => {
-      setStatus(getTripStatus(simulatedDate))
+      if (simulatedIndex === null) {
+        setStatus(getTripStatus(null))
+      }
     }, 1000)
     return () => clearInterval(timer)
-  }, [simulatedDate])
+  }, [simulatedIndex])
 
-  const setSimDay = (dateStr) => {
-    setSimulatedDate(new Date(dateStr))
-    if (isCompact) {
-      setIsExpanded(true)
+  const handlePrev = (e) => {
+    e?.stopPropagation()
+    if (simulatedIndex === null) return
+    if (simulatedIndex === 0) {
+      setSimulatedIndex(null)
+    } else {
+      setSimulatedIndex(simulatedIndex - 1)
     }
   }
 
-  const resetRealTime = () => {
-    setSimulatedDate(null)
+  const handleNext = (e) => {
+    e?.stopPropagation()
+    if (simulatedIndex === null) {
+      setSimulatedIndex(0)
+    } else if (simulatedIndex < TRIP_EVENTS.length - 1) {
+      setSimulatedIndex(simulatedIndex + 1)
+    }
+  }
+
+  const resetRealTime = (e) => {
+    e?.stopPropagation()
+    setSimulatedIndex(null)
   }
 
   // Format time HH:MM
@@ -35,25 +61,54 @@ export function TripStatusWidget({ isCompact = false }) {
 
   if (isCompact && !isExpanded) {
     return (
-      <div className="trip-status-compact" onClick={() => setIsExpanded(true)}>
-        <div className="compact-left">
+      <div className="trip-status-compact">
+        <button
+          type="button"
+          className="compact-arrow-btn"
+          onClick={handlePrev}
+          disabled={simulatedIndex === null}
+          title="Poprzedni krok"
+        >
+          ◀
+        </button>
+
+        <div className="compact-center-content" onClick={() => setIsExpanded(true)}>
           <span className={`live-dot ${status.phase === 'during' ? 'pulse' : ''}`}></span>
-          {status.phase === 'before' ? (
+          {simulatedIndex !== null ? (
+            <span className="compact-text">
+              <span className="sim-badge">SIM {simulatedIndex + 1}/{TRIP_EVENTS.length}</span> <strong>D{TRIP_EVENTS[simulatedIndex].day}</strong> {TRIP_EVENTS[simulatedIndex].icon} {TRIP_EVENTS[simulatedIndex].title}
+            </span>
+          ) : status.phase === 'before' ? (
             <span className="compact-text">
               ⏳ Do startu: <strong>{status.countdown.days}d {status.countdown.hours}h {status.countdown.minutes}m</strong>
             </span>
           ) : status.currentEvent ? (
             <span className="compact-text">
-              {status.currentEvent.icon} <strong>{status.currentEvent.title}</strong> ({formatTime(status.currentEvent.start)}–{formatTime(status.currentEvent.end)})
+              {status.currentEvent.icon} <strong>{status.currentEvent.title}</strong>
             </span>
           ) : (
             <span className="compact-text">🇮🇸 Wyprawa na Islandię</span>
           )}
         </div>
-        <div className="compact-right">
-          {simulatedDate && <span className="sim-indicator">🔮 SIM</span>}
-          <button className="compact-toggle-btn" title="Rozwiń szczegóły">▼</button>
-        </div>
+
+        <button
+          type="button"
+          className="compact-arrow-btn"
+          onClick={handleNext}
+          disabled={simulatedIndex !== null && simulatedIndex >= TRIP_EVENTS.length - 1}
+          title="Następny krok"
+        >
+          ▶
+        </button>
+
+        <button
+          type="button"
+          className="compact-toggle-btn"
+          onClick={() => setIsExpanded(true)}
+          title="Rozwiń szczegóły"
+        >
+          ▼
+        </button>
       </div>
     )
   }
@@ -99,7 +154,7 @@ export function TripStatusWidget({ isCompact = false }) {
           </div>
 
           <div className="next-event-banner">
-            <span className="banner-sub">Pierwszy krok:</span>
+            <span className="banner-sub">Pierwszy krok wyprawy:</span>
             <strong>✈️ 16.09 (Śr), 20:55 — Wylot WizzAir W6 1501 z Warszawy</strong>
           </div>
         </div>
@@ -156,28 +211,53 @@ export function TripStatusWidget({ isCompact = false }) {
         </div>
       )}
 
-      {/* Symulator godzinówki */}
-      <div className="simulator-bar">
-        <div className="simulator-header">
-          <span>🔮 Symulator trasy (kliknij punkt):</span>
-          {simulatedDate && (
-            <button className="reset-sim-btn" onClick={resetRealTime}>🔴 Czas realny</button>
-          )}
+      {/* Kompaktowy stepper z nawigacją strzałkami */}
+      <div className="stepper-bar">
+        <div className="stepper-nav-row">
+          <button
+            type="button"
+            className="stepper-nav-btn"
+            onClick={handlePrev}
+            disabled={simulatedIndex === null}
+            title="Poprzedni krok"
+          >
+            ◀
+          </button>
+
+          <div className="stepper-nav-center">
+            {simulatedIndex === null ? (
+              <div className="stepper-label-live">
+                <span className="live-dot pulse"></span>
+                <span>CZAS REALNY (ODLICZANIE)</span>
+              </div>
+            ) : (
+              <div className="stepper-label-step">
+                <span className="stepper-step-badge">Krok {simulatedIndex + 1} / {TRIP_EVENTS.length}</span>
+                <span className="stepper-step-title">
+                  {TRIP_EVENTS[simulatedIndex].icon} D{TRIP_EVENTS[simulatedIndex].day}: {TRIP_EVENTS[simulatedIndex].title}
+                </span>
+              </div>
+            )}
+          </div>
+
+          <button
+            type="button"
+            className="stepper-nav-btn"
+            onClick={handleNext}
+            disabled={simulatedIndex !== null && simulatedIndex >= TRIP_EVENTS.length - 1}
+            title="Następny krok"
+          >
+            ▶
+          </button>
         </div>
-        <div className="sim-chips">
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-16T21:30:00+02:00')}>D0 Lot WAW</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-17T09:45:00+00:00')}>D1 Þingvellir</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-17T12:00:00+00:00')}>D1 Geysir</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-17T16:00:00+00:00')}>D1 Bónus</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-18T13:00:00+00:00')}>D2 Lodowiec</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-18T17:00:00+00:00')}>D2 Reynisfjara</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-19T10:00:00+00:00')}>D3 Diamenty</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-19T19:30:00+00:00')}>D3 Basen Vík</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-20T16:00:00+00:00')}>D4 Klify</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-21T12:30:00+00:00')}>D5 Kirkjufell</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-21T21:00:00+00:00')}>D5 Kvika Footbath</button>
-          <button className="sim-btn" onClick={() => setSimDay('2026-09-22T13:30:00+00:00')}>D6 Obiad GF</button>
-        </div>
+
+        {simulatedIndex !== null && (
+          <div className="stepper-reset-row">
+            <button type="button" className="reset-sim-btn" onClick={resetRealTime}>
+              🔴 Przywróć czas realny
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )
